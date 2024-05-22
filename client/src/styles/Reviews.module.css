@@ -1,0 +1,97 @@
+.container {
+  width: 60%;
+  margin: 5rem auto;
+  padding: 2rem;
+  /* border: 2px solid red; */
+}
+
+/* @media (min-width: 768px) {
+  .container {
+    width: 800px;
+  }
+} */
+
+.reviews {
+  border: 2px solid var(--gris);
+  background-color: var(--gris-claro);
+  border-radius: .5rem;
+}
+
+.caro{
+  background-color: none;
+  border: none;
+  
+  padding: 1rem 2rem;
+}
+
+
+.title h2{
+  color: var(--rosa);
+  letter-spacing: .10em;
+  padding: 5px;
+  margin-bottom: 2rem;
+  
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;  
+}
+
+.fecha{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.fecha img{
+  height: 25px;
+  
+}
+
+.fecha h6{
+  margin-left: .8rem;
+  margin-top: .5rem;
+  color: var(--gris);
+}
+
+.comment {
+  color: var(--negro);
+  font-weight: 500;
+  padding: 0 3rem;
+}
+
+.name {
+  color: var(--negro);
+  font-weight: 380;
+  font-size: medium;
+  padding: 0 3rem;
+}
+
+
+@media (max-width: 1150px) {
+  .container{
+    width: 80%;
+  }
+}
+
+@media (max-width: 1020px) {
+  .container{
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .comment {
+    color: var(--negro);
+    font-weight: 500;
+    padding: 0 1rem;
+    font-size: small;
+  }
+
+  .name {
+    color: var(--negro);
+    font-weight: 380;
+    font-size: small;
+    padding: 0 1rem;
+  }
+  
+}

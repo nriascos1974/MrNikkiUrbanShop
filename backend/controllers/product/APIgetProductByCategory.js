@@ -1,0 +1,1 @@
+const DBProductGetCategory = require('../../database/controllers/products/productGet/handlers/DBProductGetCategory');

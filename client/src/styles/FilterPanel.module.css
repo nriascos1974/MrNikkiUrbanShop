@@ -1,0 +1,204 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 280px;
+  min-height: 100vh;
+  margin-right: 1rem;
+  background-color: var(--blanco);
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  padding-top: 0.25rem;
+}
+
+.panelHeader h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--rosa);
+}
+
+.clearFiltersButton {
+  padding: 0 0.5rem;
+  border-radius: 4px;
+  border: none;
+  background-color: transparent;
+  color: var(--gris-oscuro);
+}
+.clearFiltersButton:hover {
+  color: var(--rosa);
+}
+
+.panelBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 280px;
+  margin: 1rem 0;
+}
+
+.panelSection {
+  min-width: 100%;
+  border: none;
+}
+
+.panelSection .sectionItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 0.25em;
+}
+
+.panelSection .selectItem {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.panelSection .sectionItem .checkItem {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  accent-color: var(--verde);
+  margin-right: 0.5rem;
+}
+
+.panelSection .sectionItem .priceInput {
+  width: 5rem;
+  margin-right: 0.5rem;
+  border: rgba(0, 0, 0, 0.125) 1px solid;
+  font-size: 14px;
+  padding: 0.5rem;
+}
+
+.panelSection .sectionItem .searchButton {
+  border: none;
+  background-color: var(--verde);
+  color: white;
+}
+.searchButton:hover {
+  background-color: #3ec591;
+}
+
+.priceSlider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--verde);
+  margin: 2rem 0;
+}
+
+.priceSlider .thumb {
+  width: 14px;
+  height: 14px;
+  cursor: grab;
+  background-color: white;
+  border-radius: 50%;
+  border: 4px solid var(--verde);
+  top: -7px;
+}
+
+.mobilePanelFooter {
+  display: none;
+}
+
+.labelsFilters{
+  /* border: 2px solid blue; */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.containerPrice{
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+}
+
+.labelPrice{
+  color: var(--gris);
+  font-weight: 500;
+}
+
+.inputPrice{
+  border: 1px solid var(--verde);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.buttonPrice{
+  color: white;
+  font-weight: 500;
+  background-color: var(--verde);
+
+  border-radius: 5px;
+  width: fit-content;
+  padding: 6px;
+  
+  align-self: center;
+  transition: .3s ease;
+}
+
+.buttonPrice:hover{
+  scale: calc(1.02);
+  box-shadow: 1px 1px 8px black;
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    z-index: 100;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+    padding-top: 2rem;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .mobilePanelFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0;
+    background-color: blanchedalmond;
+  }
+
+  .mobilePanelFooter .closePanelButton {
+    margin: 0;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    background-color: var(--verde);
+  }
+  .closePanelButton:hover {
+    background-color: #3ec591;
+  }
+
+  .panelVisible {
+    left: 0;
+    transition: left 0.5s ease-in-out;
+  }
+}

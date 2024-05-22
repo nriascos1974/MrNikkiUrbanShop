@@ -1,0 +1,13 @@
+.container {
+  max-width: 1200px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--rosa);
+  margin: 2rem 0;
+  padding: 0 2rem;
+}

@@ -1,0 +1,369 @@
+.containerDetail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blanco);
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--blanco);
+  width: 100%;
+  max-width: 1400px;
+  padding: 0;
+  margin: 0;
+}
+
+.detailTitle {
+  align-self: flex-start;
+  font-size: 24px;
+  text-align: left;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.informationProduct {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.informationProduct .imagesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  height: auto;
+  max-height: 500px;
+  overflow: hidden;
+  margin: 0 1rem 2rem 0;
+  padding: 0;
+  flex: 1 1 45%;
+}
+
+.informationProduct .imagesContainer .imageProduct {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.informationProduct .infoProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 2px 0px rgba(92, 91, 91, 0.75);
+  margin: 0 1rem;
+  padding: 3.5rem 4rem;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 650px;
+  min-width: 400px;
+  flex: 1 1 540px;
+}
+
+.infoProduct .productTitle {
+  align-self: flex-start;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.infoProduct .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.infoProduct .price h4 {
+  margin: 0;
+  color: var(--rosa);
+}
+
+.infoProduct .price .priceButton {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: var(--verde);
+  color: var(--blanco);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.infoProduct .gastoEnvio {
+  align-self: flex-start;
+  font-size: 14px;
+  text-align: left;
+  font-weight: normal;
+  margin: 0;
+  color: var(--gris);
+}
+
+.infoProduct .informationAditional {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0.25rem auto;
+  padding: 0;
+}
+
+.infoProduct .informationAditional .containerInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0.5rem;
+  box-shadow: 0px 0px 2px 0px var(--rosa);
+  padding: 1rem;
+  width: 120px;
+}
+
+.infoProduct .informationAditional .containerInfo p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: normal;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.infoProduct .informationAditional .containerInfo p span {
+  font-weight: bold;
+  color: var(--rosa);
+}
+
+.infoProduct .informationAditional .containerInfo .truck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.infoProduct .infoEnvio {
+  align-self: flex-start;
+  font-size: 14px;
+  text-align: left;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  color: var(--gris);
+}
+
+.infoProduct .infoEnvio p {
+  margin: 0;
+  padding: 0;
+}
+
+.infoProduct .stockInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+
+.infoProduct .stockInfo p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0.75rem 0;
+  padding: 0;
+}
+
+.infoProduct .stockInfo p span {
+  font-weight: medium;
+  color: var(--verde);
+}
+
+.infoProduct .stockInfo label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.infoProduct .stockInfo .stock {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+}
+
+.infoProduct .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+.infoProduct .buttons .buttonAdd {
+  border: none;
+  border-radius: 5px;
+  background: var(--rosa);
+  color: var(--blanco);
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem 0;
+  text-transform: uppercase;
+}
+
+.infoProduct .buttons .buttonSell {
+  border: none;
+  border-radius: 5px;
+  background: #e55b5150;
+  color: var(--rosa);
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem 0;
+  text-transform: uppercase;
+}
+
+.descriptionSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 3rem 0;
+}
+
+.descriptionSection h3 {
+  text-transform: uppercase;
+}
+
+.descriptionSection .descriptionProduct {
+  background-color: white;
+  width: 100%;
+  max-width: 1300px;
+  padding: 2rem;
+  box-shadow: 0px 0px 2px 0px rgba(92, 91, 91, 0.75);
+}
+
+.questionsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 3rem 0;
+}
+
+.questionsSection h3 {
+  text-transform: uppercase;
+}
+
+.questionsSection .containerPregunta {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.questionsSection .containerPregunta h4 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 0.75rem;
+}
+
+.questionsSection .containerPregunta textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--gris);
+}
+
+.questionsSection .containerPregunta .buttonAsk {
+  align-self: flex-end;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background: var(--rosa);
+  color: var(--blanco);
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+.questionsSection .containerPregResp {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1000px;
+  margin: 2rem 0;
+}
+
+.questionsSection .containerPregResp h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.questionsSection .containerPregResp .ask {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 0px rgba(92, 91, 91, 0.75);
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+.questionsSection .containerPregResp .ask span {
+  margin: 0.5rem;
+}
+
+.questionsSection .containerPregResp .ask p {
+  margin: 0 1.5rem;
+  font-weight: normal;
+  color: var(--gris);
+}
+
+.infoSeller{
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  /* .informationProduct {
+    width: 80%;
+    margin: 0 auto;
+  } */
+}

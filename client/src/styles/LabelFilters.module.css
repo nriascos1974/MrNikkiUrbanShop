@@ -1,0 +1,37 @@
+.container {
+    
+    width: fit-content;
+    background-color: var(--gris-claro);
+    
+    display: flex;
+    align-items: center;
+    padding: 6px 8px;
+    border: 1.5px solid var(--gris);
+    border-radius: 1rem;
+}
+
+.container button{
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    
+    margin-right: .5rem;
+    color: var(--negro);
+    font-size: large;
+    
+}
+
+.container div {
+    display: flex;
+    height: 25px;
+    align-items: center;
+    width: fit-content;
+    max-width: 210px;
+    color: var(--gris-oscuro);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* border: 2px solid blue; */
+    
+}

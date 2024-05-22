@@ -1,0 +1,72 @@
+[
+  {
+    "_id": {
+      "$oid": "644c29a4aaff7bf57c2a0a06"
+    },
+    "name": "Fito Paez",
+    "calification": 5,
+    "email": "fitopaez@mail.com",
+    "state": true,
+    "phone": 112233,
+    "password": "1234",
+    "address": "callefalsa 123",
+    "products": [],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "644c29a4aaff7bf57c2a0a08"
+    },
+    "name": "Charly Garcia",
+    "calification": 5,
+    "email": "seminare@mail.com",
+    "state": true,
+    "phone": 101213,
+    "password": "1234",
+    "address": "edificioalto 123",
+    "products": [],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "644c29a4aaff7bf57c2a0a09"
+    },
+    "name": "Carlos Gardel",
+    "calification": 5,
+    "email": "mibuenosairesquerido@mail.com",
+    "state": true,
+    "phone": 445566,
+    "password": "1234",
+    "address": "laboca 123",
+    "products": [],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "644c29a4aaff7bf57c2a0a0a"
+    },
+    "name": "Lionel Messi",
+    "calification": 5,
+    "email": "leomessi@mail.com",
+    "state": true,
+    "phone": 778899,
+    "password": "1234",
+    "address": "callemessi 123",
+    "products": [],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "644c29a4aaff7bf57c2a0a07"
+    },
+    "name": "Julian Alvarez",
+    "calification": 5,
+    "email": "laaraña@mail.com",
+    "state": true,
+    "phone": 91218,
+    "password": "1234",
+    "address": "nuñez 123",
+    "products": [],
+    "__v": 0
+  }
+]

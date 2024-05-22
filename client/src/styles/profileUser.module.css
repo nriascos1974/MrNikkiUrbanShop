@@ -1,0 +1,237 @@
+.containerProfile{
+    margin: 30px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+}
+
+.containerProfileData{
+    border: 2px solid var(--verde);
+    background-color: var(--gris-claro);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.profileTitle{
+    /* border: 2px solid blue; */
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    margin: 30px 20px;
+    color: var(--verde);
+}
+
+.profileDataTitle{
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 0 10px;
+    width: 50vw;
+    font-size: 1.5rem;
+    font-weight: medium;
+    text-align: left;
+    margin: 30px 20px;
+    color: var(--verde);
+}
+
+.lapiz {
+    /* border: 2px solid red; */
+    cursor: pointer;
+    margin-bottom: .5rem;
+}
+
+.secciones{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    gap: 2rem;
+    align-items: center;
+}
+
+.deslogueo{
+    padding: 10px;
+
+    border: none;
+    border-radius: 5px;
+    background: var(--lila) !important;
+    color: var(--blanco);
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+
+    transition: .3s ease;
+}
+
+.form__Login{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80%;
+    margin-bottom: 20px;
+    align-self: center;
+    
+    /* border: 2px solid red; */
+}
+
+.form__Login input{
+    padding: 10px;
+    border: 1px solid var(--verde);
+    font-weight: 600;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+    width:100%;
+}
+
+.form__Login input:focus{
+    border: 1px solid var(--gris);
+}
+
+.form__Login_Edit{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80%;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.form__Login_Edit label{
+    color: var(--gris);
+}
+
+.form__Login_Edit input{
+    padding: 10px;
+    border: 1px solid var(--azul);
+    font-weight: 600;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+    width:100%;
+}
+
+.form__Login_Edit select{
+    padding: 10px;
+    border: 1px solid var(--azul);
+    font-weight: 600;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+    width:100%;
+}
+
+.secciones button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: var(--verde);
+    color: var(--blanco);
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+
+    transition: .3s ease;
+}
+.form__Login button:hover{
+    scale: calc(1.02);
+    box-shadow: 2px 2px 12px rgba(0,0,0,.7);
+}
+
+
+
+
+.imageDetail{
+    /* border: 2px solid red; */
+    margin-bottom: -1rem;
+}
+
+.form__profile button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: var(--verde);
+    color: var(--blanco);
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid blue;
+}
+
+
+
+.color{
+    width: 150px;           
+    height: 10px;          
+    background: var(--amarillo);        
+    border-radius: 5px;
+}
+
+@media (max-width: 1090px) {
+    .secciones button{
+        padding: 8px;
+        
+        font-size: 13px;
+        font-weight: 400;
+        
+    }
+}
+
+@media (max-width: 900px) {
+    .containerProfile{
+        margin: 10px;
+    }
+    .containerProfileData{
+        width: 100%;
+    }
+    .form__Login{
+        width: 100%;
+    }
+    .form__Login input{
+       align-self: center;
+       width: 96%;
+    }
+    .form__Login label{
+        align-self: center;
+        width: 96%;
+    }
+    
+}
+
+@media (max-width: 485px) {
+    .profileDataTitle h3{
+        font-size: 20px;
+    }
+    .profileDataTitle{
+        margin-bottom: 1rem;
+    }
+    .secciones{
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .secciones button{
+        width: 90%;
+    }
+}
+
+@media (max-width: 425px) {
+    .profileDataTitle h3{
+        font-size: 17px;    
+    }
+}
+
+@media (max-width: 380px) {
+    .profileDataTitle h3{
+        font-size: 14px;    
+    }
+}

@@ -1,0 +1,606 @@
+{
+  "products": [
+    {
+      "name": "iPhone 7 Plus 128 GB oro rosa",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683323500/product_images/1683323499680-%5Bobject%20Object%5D.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327200/product_images/pexels-john-tekeridis-214483_eqiylf.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327273/product_images/pexels-raka-miftah-4279153_gmr1ag.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "state": "Nuevo",
+      "price": 522000,
+      "Brand": "Apple",
+      "stock": 1,
+      "category": "Celulares y Telefonos",
+      "subcategory": "Telefonia"
+    },
+    {
+      "name": "iPhone 7 Plus 64 GB oro rosa",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327200/product_images/pexels-john-tekeridis-214483_eqiylf.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683323500/product_images/1683323499680-%5Bobject%20Object%5D.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327273/product_images/pexels-raka-miftah-4279153_gmr1ag.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "state": "Reacondicionado",
+      "price": 520000,
+      "Brand": "Apple",
+      "stock": 1,
+      "category": "Celulares y Telefonos",
+      "subcategory": "Telefonia"
+    },
+    {
+      "name": "iPhone 7 Plus 128 GB rosado",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327273/product_images/pexels-raka-miftah-4279153_gmr1ag.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327200/product_images/pexels-john-tekeridis-214483_eqiylf.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683323500/product_images/1683323499680-%5Bobject%20Object%5D.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "state": "Reacondicionado",
+      "price": 499000,
+      "Brand": "Apple",
+      "stock": 1,
+      "category": "Celulares y Telefonos",
+      "subcategory": "Telefonia"
+    },
+    {
+      "name": "Samsung Galaxy Xcover 4s 32 GB Black Desbloqueado",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327204/product_images/pexels-kafeel-ahmed-14979030_b0hdcn.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327203/product_images/pexels-kafeel-ahmed-14979010_zaao0t.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327202/product_images/pexels-kafeel-ahmed-14979009_bspvz7.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683323500/product_images/1683323499771-%5Bobject%20Object%5D.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. Justo nec ultrices dui sapien. Arcu non odio euismod lacinia at quis risus. Id venenatis a condimentum vitae sapien pellentesque.",
+      "state": "Reacondicionado",
+      "price": 822000,
+      "Brand": "Samsung",
+      "stock": 1,
+      "category": "Celulares y Telefonos",
+      "subcategory": "Telefonia"
+    },
+    {
+      "name": "Samsung Galaxy Xcover 4s 32 GB Black Desbloqueado",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327203/product_images/pexels-kafeel-ahmed-14979010_zaao0t.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327204/product_images/pexels-kafeel-ahmed-14979030_b0hdcn.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327202/product_images/pexels-kafeel-ahmed-14979009_bspvz7.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327179/product_images/pexels-castorly-stock-4114778_cjdxjs.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. Justo nec ultrices dui sapien. Arcu non odio euismod lacinia at quis risus. Id venenatis a condimentum vitae sapien pellentesque.",
+      "state": "Reacondicionado",
+      "price": 822000,
+      "Brand": "Samsung",
+      "stock": 1,
+      "category": "Celulares y Telefonos",
+      "subcategory": "Telefonia"
+    },
+    {
+      "name": "Samsung Galaxy Xcover 4s 32 GB Black Desbloqueado",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327202/product_images/pexels-kafeel-ahmed-14979009_bspvz7.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327203/product_images/pexels-kafeel-ahmed-14979010_zaao0t.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327204/product_images/pexels-kafeel-ahmed-14979030_b0hdcn.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327179/product_images/pexels-castorly-stock-4114778_cjdxjs.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. Justo nec ultrices dui sapien. Arcu non odio euismod lacinia at quis risus. Id venenatis a condimentum vitae sapien pellentesque.",
+      "state": "Reacondicionado",
+      "price": 822000,
+      "Brand": "Samsung",
+      "stock": 1,
+      "category": "Celulares y Telefonos",
+      "subcategory": "Telefonia"
+    },
+    {
+      "name": "Samsung Galaxy Xcover 4s 32 GB Black Desbloqueado",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327179/product_images/pexels-castorly-stock-4114778_cjdxjs.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327202/product_images/pexels-kafeel-ahmed-14979009_bspvz7.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327203/product_images/pexels-kafeel-ahmed-14979010_zaao0t.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327204/product_images/pexels-kafeel-ahmed-14979030_b0hdcn.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. Justo nec ultrices dui sapien. Arcu non odio euismod lacinia at quis risus. Id venenatis a condimentum vitae sapien pellentesque.",
+      "state": "Reacondicionado",
+      "price": 822000,
+      "Brand": "Samsung",
+      "stock": 1,
+      "category": "Celulares y Telefonos",
+      "subcategory": "Telefonia"
+    },
+    {
+      "name": "Guitarra Eléctrica Gibson Les Paul",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327224/product_images/pexels-m%C3%A9line-waxx-165971_f1did2.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327263/product_images/pexels-pixabay-417451_xd2qlu.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327244/product_images/pexels-pixabay-258283_wxzxpa.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327236/product_images/pexels-nothing-ahead-3423985_t90saw.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 1100000,
+      "Brand": "Gibson",
+      "stock": 2,
+      "category": "Instrumentos musicales",
+      "subcategory": "Instrumentos de cuerda"
+    },
+    {
+      "name": "Guitarra eléctrica Epiphone Original Collection Les Paul Standard 60s de caoba bourbon burst níquel",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327263/product_images/pexels-pixabay-417451_xd2qlu.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327224/product_images/pexels-m%C3%A9line-waxx-165971_f1did2.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327244/product_images/pexels-pixabay-258283_wxzxpa.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327236/product_images/pexels-nothing-ahead-3423985_t90saw.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 1100000,
+      "Brand": "Gibson",
+      "stock": 2,
+      "category": "Instrumentos musicales",
+      "subcategory": "Instrumentos de cuerda"
+    },
+    {
+      "name": "Violín Profesional Fishman Classic Series V-200 Pickup",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327195/product_images/pexels-fotograf-jylland-3120109_u3ecfz.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327263/product_images/pexels-pixabay-462447_zocr9w.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327216/product_images/pexels-lukas-306175_ddnwsk.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 1500000,
+      "Brand": "Fishman",
+      "stock": 2,
+      "category": "Instrumentos musicales",
+      "subcategory": "Instrumentos de cuerda"
+    },
+    {
+      "name": "Fishman Classic Series V-200 Pickup Violín Profesional",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327263/product_images/pexels-pixabay-462447_zocr9w.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327195/product_images/pexels-fotograf-jylland-3120109_u3ecfz.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327216/product_images/pexels-lukas-306175_ddnwsk.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 1450000,
+      "Brand": "Fishman",
+      "stock": 1,
+      "category": "Instrumentos musicales",
+      "subcategory": "Instrumentos de cuerda"
+    },
+    {
+      "name": "Cámara Nikon Réflex Profesional D3500 Lente 18-55mm 70-300mm",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327207/product_images/pexels-lisa-fotios-990865_lvf0dj.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327288/product_images/pexels-shardar-tarikul-islam-8983136_u5eqrh.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327234/product_images/pexels-pixabay-51383_fy8xdi.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327217/product_images/pexels-math-249597_rf3s5u.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Nuevo",
+      "price": 687000,
+      "Brand": "Nikon",
+      "stock": 3,
+      "category": "Video",
+      "subcategory": "Cámaras de fotografía"
+    },
+    {
+      "name": "Cámara Nikon Réflex D3500 Lente 18-55mm 70-300mm",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327288/product_images/pexels-shardar-tarikul-islam-8983136_u5eqrh.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327207/product_images/pexels-lisa-fotios-990865_lvf0dj.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327234/product_images/pexels-pixabay-51383_fy8xdi.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327217/product_images/pexels-math-249597_rf3s5u.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Nuevo",
+      "price": 687000,
+      "Brand": "Nikon",
+      "stock": 3,
+      "category": "Video",
+      "subcategory": "Cámaras de fotografía"
+    },
+    {
+      "name": "Cámara Canon Réflex Profesional Eos Rebel T7 18-55 24.4mpx",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327234/product_images/pexels-pixabay-51383_fy8xdi.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327288/product_images/pexels-shardar-tarikul-islam-8983136_u5eqrh.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327207/product_images/pexels-lisa-fotios-990865_lvf0dj.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327217/product_images/pexels-math-249597_rf3s5u.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 825000,
+      "Brand": "Canon",
+      "stock": 1,
+      "category": "Video",
+      "subcategory": "Cámaras de fotografía"
+    },
+    {
+      "name": "Micrófono HyperX SoloCast condensador cardioide negro",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327297/product_images/pexels-tima-miroshnichenko-6671687_gmlevr.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327297/product_images/pexels-%D0%B2%D0%B0%D0%B4%D0%B8%D0%BC-%D0%B1%D0%B8%D1%86%D1%8C-11845513_c4xsbp.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 195000,
+      "Brand": "HyperX",
+      "stock": 1,
+      "category": "Audio",
+      "subcategory": "Micrófonos y amplificadores"
+    },
+    {
+      "name": "Microfono De Condensador Retro Usb Polsen Rc-77-u",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327297/product_images/pexels-%D0%B2%D0%B0%D0%B4%D0%B8%D0%BC-%D0%B1%D0%B8%D1%86%D1%8C-11845513_c4xsbp.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327297/product_images/pexels-tima-miroshnichenko-6671687_gmlevr.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 700000,
+      "Brand": "Polsen",
+      "stock": 1,
+      "category": "Audio",
+      "subcategory": "Micrófonos y amplificadores"
+    },
+    {
+      "name": "Smart Watch W28 Pro Serie 8 Con Asistente De Voz 2022",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327296/product_images/pexels-torsten-dettlaff-437037_cbafmy.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327295/product_images/pexels-torsten-dettlaff-437036_uhi98h.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327295/product_images/pexels-vedant-sharma-440320_w1t1bw.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Reacondicionado",
+      "price": 820000,
+      "Brand": "Apple",
+      "stock": 1,
+      "category": "Celulares y Telefonos",
+      "subcategory": "Smartwatches y accesorios"
+    },
+    {
+      "name": "Smart Watch W28 Pro Serie 8 Con Asistente De Voz 2022",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327295/product_images/pexels-torsten-dettlaff-437036_uhi98h.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327296/product_images/pexels-torsten-dettlaff-437037_cbafmy.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327295/product_images/pexels-vedant-sharma-440320_w1t1bw.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Reacondicionado",
+      "price": 833000,
+      "Brand": "Apple",
+      "stock": 1,
+      "category": "Celulares y Telefonos",
+      "subcategory": "Smartwatches y accesorios"
+    },
+    {
+      "name": "Smart Watch W28 Pro Serie 7 V2",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327295/product_images/pexels-vedant-sharma-440320_w1t1bw.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327296/product_images/pexels-torsten-dettlaff-437037_cbafmy.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327295/product_images/pexels-torsten-dettlaff-437036_uhi98h.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Reacondicionado",
+      "price": 745000,
+      "Brand": "Apple",
+      "stock": 1,
+      "category": "Celulares y Telefonos",
+      "subcategory": "Smartwatches y accesorios"
+    },
+    {
+      "name": "Apple AirPods con estuche de carga - Blanco",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327285/product_images/pexels-ready-made-3921862_ea1yj8.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327283/product_images/pexels-ready-made-3921838_nt6rln.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327276/product_images/pexels-ready-made-3921830_wwlvpd.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327292/product_images/pexels-spotwizardlee-8437210_lirywt.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Nuevo",
+      "price": 687000,
+      "Brand": "Apple",
+      "stock": 1,
+      "category": "Celulares y Telefonos",
+      "subcategory": "Accesorios"
+    },
+    {
+      "name": "Apple AirPods (3ª generación) con estuche de carga",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327283/product_images/pexels-ready-made-3921838_nt6rln.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327285/product_images/pexels-ready-made-3921862_ea1yj8.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327276/product_images/pexels-ready-made-3921830_wwlvpd.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327292/product_images/pexels-spotwizardlee-8437210_lirywt.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Reacondicionado",
+      "price": 817000,
+      "Brand": "Apple",
+      "stock": 1,
+      "category": "Celulares y Telefonos",
+      "subcategory": "Accesorios"
+    },
+    {
+      "name": "Second Gen. Apple AirPods Pro",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327292/product_images/pexels-spotwizardlee-8437210_lirywt.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327283/product_images/pexels-ready-made-3921838_nt6rln.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327285/product_images/pexels-ready-made-3921862_ea1yj8.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327276/product_images/pexels-ready-made-3921830_wwlvpd.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 652000,
+      "Brand": "Apple",
+      "stock": 1,
+      "category": "Celulares y Telefonos",
+      "subcategory": "Accesorios"
+    },
+    {
+      "name": "Your Soul is a River - Nikita Gill - Tapa Blanda - Impecable",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327292/product_images/pexels-thought-catalog-904620_enjtxf.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327288/product_images/pexels-ready-made-3847658_pa59e8.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 73000,
+      "Brand": "Penguin",
+      "stock": 1,
+      "category": "Libros fisicos",
+      "subcategory": "Otros"
+    },
+    {
+      "name": "Your Silence Will Not Protect You - Audre Lorde - Tapa Blanda - Como nuevo",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327288/product_images/pexels-ready-made-3847658_pa59e8.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327292/product_images/pexels-thought-catalog-904620_enjtxf.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 54000,
+      "Brand": "Penguin",
+      "stock": 1,
+      "category": "Libros fisicos",
+      "subcategory": "Otros"
+    },
+    {
+      "name": "Pequeña Combi a escala, en madera, con ruedas funcionales, pintada a mano",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327290/product_images/pexels-revac-film_s_photography-54278_yxxoru.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 37000,
+      "Brand": "Nest",
+      "stock": 1,
+      "category": "Juegos y juguetes",
+      "subcategory": "Juguetes"
+    },
+    {
+      "name": "Juguetes artesanales: animales en madera pintados a mano, pintura no-tóxica",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327181/product_images/pexels-cottonbro-studio-3663058_yitm8t.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327180/product_images/pexels-cottonbro-studio-3661243_cxfe5z.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327180/product_images/pexels-cottonbro-studio-3661240_p9u3mn.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 64000,
+      "Brand": "Nest",
+      "stock": 3,
+      "category": "Juegos y juguetes",
+      "subcategory": "Juguetes"
+    },
+    {
+      "name": "Juguetes artesanales: animales en madera pintados a mano, pintura no-tóxica",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327180/product_images/pexels-cottonbro-studio-3661243_cxfe5z.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327181/product_images/pexels-cottonbro-studio-3663058_yitm8t.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327180/product_images/pexels-cottonbro-studio-3661240_p9u3mn.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Nuevo",
+      "price": 69000,
+      "Brand": "Nest",
+      "stock": 2,
+      "category": "Juegos y juguetes",
+      "subcategory": "Juguetes"
+    },
+    {
+      "name": "Juguetes artesanales: animales en madera pintados a mano, pintura no-tóxica",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327180/product_images/pexels-cottonbro-studio-3661240_p9u3mn.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327180/product_images/pexels-cottonbro-studio-3661243_cxfe5z.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327181/product_images/pexels-cottonbro-studio-3663058_yitm8t.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Nuevo",
+      "price": 72000,
+      "Brand": "Nest",
+      "stock": 1,
+      "category": "Juegos y juguetes",
+      "subcategory": "Juguetes"
+    },
+    {
+      "name": "Sony WH-1000XM4 - Auriculares inalámbricos con cancelación de ruido",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327289/product_images/pexels-sound-on-3394651_j8i54k.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327177/product_images/pexels-arturo-a%C3%B1ez-10695713_nlgbri.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327194/product_images/pexels-eren-li-7241360_qpa9ux.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 180000,
+      "Brand": "Sony",
+      "stock": 1,
+      "category": "Audio",
+      "subcategory": "Audífonos"
+    },
+    {
+      "name": "JBL Tune 125TWS Auriculares inalámbricos",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327177/product_images/pexels-arturo-a%C3%B1ez-10695713_nlgbri.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327289/product_images/pexels-sound-on-3394651_j8i54k.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327194/product_images/pexels-eren-li-7241360_qpa9ux.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 167000,
+      "Brand": "JBL",
+      "stock": 1,
+      "category": "Audio",
+      "subcategory": "Audífonos"
+    },
+    {
+      "name": "Auriculares extra bass Sony MDR-XB550AP",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327194/product_images/pexels-eren-li-7241360_qpa9ux.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327177/product_images/pexels-arturo-a%C3%B1ez-10695713_nlgbri.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327289/product_images/pexels-sound-on-3394651_j8i54k.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 200000,
+      "Brand": "Sony",
+      "stock": 1,
+      "category": "Audio",
+      "subcategory": "Audífonos"
+    },
+    {
+      "name": "Apple iPad Mini de 7.9 Wi-Fi 64GB Gris espacial (5ª generación)",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327181/product_images/pexels-cottonbro-studio-3944396_nsycsm.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327182/product_images/pexels-cottonbro-studio-3944405_rrkv6g.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 1000000,
+      "Brand": "Apple",
+      "stock": 1,
+      "category": "Computación",
+      "subcategory": "Tablets y accesorios"
+    },
+    {
+      "name": "Teclado bluetooth Apple Magic QWERTY",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327182/product_images/pexels-cottonbro-studio-3944405_rrkv6g.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327181/product_images/pexels-cottonbro-studio-3944396_nsycsm.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 1980000,
+      "Brand": "Apple",
+      "stock": 1,
+      "category": "Computación",
+      "subcategory": "Tablets y accesorios"
+    },
+    {
+      "name": "Teclado bluetooth Apple Magic QWERTY español latinoamérica color plata y blanco",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327255/product_images/pexels-pixabay-270640_dtcs7o.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327181/product_images/pexels-cottonbro-studio-3944396_nsycsm.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 230000,
+      "Brand": "Apple",
+      "stock": 1,
+      "category": "Computación",
+      "subcategory": "Periféricos de PC"
+    },
+    {
+      "name": "Teclado bluetooth Apple Magic QWERTY español latinoamérica color plata y blanco",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327255/product_images/pexels-pixabay-270640_dtcs7o.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327203/product_images/pexels-kaboompics-com-6416_xgthgz.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327204/product_images/pexels-john-petalcurin-2115256_hzpcor.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 230000,
+      "Brand": "Apple",
+      "stock": 1,
+      "category": "Computación",
+      "subcategory": "Periféricos de PC"
+    },
+    {
+      "name": "Mouse Pad De Aluminio Fina Terminación 17x20cm Mac",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327203/product_images/pexels-kaboompics-com-6416_xgthgz.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327255/product_images/pexels-pixabay-270640_dtcs7o.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327204/product_images/pexels-john-petalcurin-2115256_hzpcor.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 230000,
+      "Brand": "Apple",
+      "stock": 1,
+      "category": "Computación",
+      "subcategory": "Periféricos de PC"
+    },
+    {
+      "name": "Mouse gamer inalámbrico recargable Logitech Pro Series Pro X Superlight",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327204/product_images/pexels-john-petalcurin-2115256_hzpcor.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327203/product_images/pexels-kaboompics-com-6416_xgthgz.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327255/product_images/pexels-pixabay-270640_dtcs7o.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 12400,
+      "Brand": "Logitech",
+      "stock": 1,
+      "category": "Computación",
+      "subcategory": "Periféricos de PC"
+    },
+    {
+      "name": "Notebook HP 15-ef2126wm spruce blue 15.6, AMD Ryzen 5 5500U 8GB de RAM 256GB SSD",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327205/product_images/pexels-karsten-madsen-18105_fyhnfy.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327180/product_images/pexels-christina-morillo-1181216_wd91yx.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 978400,
+      "Brand": "HP",
+      "stock": 1,
+      "category": "Computación",
+      "subcategory": "Portátiles y accesorios"
+    },
+    {
+      "name": "Notebook Lenovo IdeaPad 14IIL05 platinum gray 14",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327180/product_images/pexels-christina-morillo-1181216_wd91yx.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327205/product_images/pexels-karsten-madsen-18105_fyhnfy.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327174/product_images/pexels-anna-nekrashevich-8534226_nsfh5r.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 848400,
+      "Brand": "Lenovo",
+      "stock": 1,
+      "category": "Computación",
+      "subcategory": "Portátiles y accesorios"
+    },
+    {
+      "name": "Notebook Lenovo IdeaPad 15ITL05 platinum grey 15.6",
+      "images": [
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,w_1000/v1683327174/product_images/pexels-anna-nekrashevich-8534226_nsfh5r.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327180/product_images/pexels-christina-morillo-1181216_wd91yx.jpg",
+        "https://res.cloudinary.com/dkexrztsg/image/upload/c_scale,h_1000/v1683327205/product_images/pexels-karsten-madsen-18105_fyhnfy.jpg"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Maecenas ultricies mi eget mauris pharetra et ultrices.",
+      "state": "Usado",
+      "price": 988400,
+      "Brand": "Lenovo",
+      "stock": 1,
+      "category": "Computación",
+      "subcategory": "Portátiles y accesorios"
+    }
+  ]
+}

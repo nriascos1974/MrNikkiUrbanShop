@@ -1,0 +1,122 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: start;
+    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.title{
+    font-size: 24px;
+    color: var(--gris);
+    font-weight: bold;
+    letter-spacing: -.6px;
+    line-height: 1.13333333;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.fecha{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #E5E5E5;
+    font-size: 16px;
+    color: var(--gris);
+    font-weight: 400;
+    margin: 0;
+}
+
+.fecha span{
+    font-size: 16px;
+    color: var(--gris);
+    font-weight: bold;
+    margin: 0;
+}
+
+.listItem{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.imageProduct{
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.status{
+    color: var(--verde);
+    font-weight: bold;
+}
+.fechaEntrega{
+    font-size: 16px;
+    color: var(--gris);
+    font-weight: 400;
+    
+}
+
+.nameProduct{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.vendedor{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.vendedor span{
+    font-size: 16px;
+    color: var(--azul);
+    font-weight: bold;
+    margin: 0;
+}
+
+.buttonShop {
+    padding: 5px 7px;
+    border: none;
+    border-radius: 5px;
+    background: var(--verde);
+    color: var(--blanco);
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+
+  /* media queries */
+
+  @media (min-width: 700px) { 
+    .container{
+        width: 70%;
+    }
+    .listItem{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .imageProduct{
+        width: 60%;
+    }
+  }
+
+    @media (min-width: 1000px) { 
+        .container{
+            width: 50%;
+        }
+    }

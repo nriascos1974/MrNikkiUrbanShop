@@ -1,0 +1,277 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--blanco);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.logo {
+  display: flex;
+  margin: 0;
+}
+
+.titleProdut {
+  padding: 1.5rem 1rem 0.5rem 1rem;
+}
+
+.titleProdut h1 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.titleProdut p {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.titleProdut span {
+  color: var(--rosa);
+  align-items: center;
+  margin-left: 10px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 0px 2px 0px rgba(92, 91, 91, 0.25);
+  margin-bottom: 2rem;
+}
+
+.formProduct {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0;
+  padding: 3rem;
+}
+
+.formProduct .formSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.formProduct .formSection h3 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.formProduct .formSection hr {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0;
+  color: var(--gris);
+}
+
+.formProduct .formSection input {
+  padding: 1rem;
+  border: 1px solid var(--verde);
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.formProduct .formSection textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--verde);
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.formProduct .formSection select {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--verde);
+  border-radius: 5px;
+  outline: none;
+}
+
+.formProduct .formSection input:focus {
+  border: 1px solid var(--gris);
+}
+
+.basicInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.basicInfo .infoItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 1rem 1rem 0;
+}
+
+.basicInfo .infoItem select {
+  width: 100%;
+}
+
+.photoSelector {
+  display: none;
+}
+
+.photoSelectorLabel {
+  color: white;
+  min-height: 40px;
+  min-width: 100px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: var(--verde);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.photoSelectorLabel:hover {
+  background-color: rgb(65, 192, 144);
+}
+
+.photoSelector:disabled + .photoSelectorLabel {
+  background-color: rgb(57, 178, 132, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: not-allowed;
+}
+
+.infoSmall {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  padding: 0;
+  font-size: 12px;
+  color: var(--gris);
+}
+
+.formProduct .buttons {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonCancel,
+.buttonSubmit {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background: var(--verde);
+  color: var(--blanco);
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  margin: 0 0.5rem;
+}
+
+.buttonSubmit:disabled {
+  background-color: rgb(57, 178, 132, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: not-allowed;
+}
+
+.buttonCancel {
+  background: var(--rosa);
+}
+
+.alertInfo {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 14px;
+}
+
+.previewsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.previewsContainer .previewItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+  border-radius: 12.5px;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.25));
+  margin: 0.5rem;
+  transition: all 0.2s ease;
+}
+.previewsContainer .previewItem:hover {
+  transform: scale(1.025);
+}
+
+.previewsContainer .previewItem .previewImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.previewsContainer .previewItem .removeImageButton {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 25px;
+  height: 25px;
+  border-radius: 25%;
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.previewsContainer .previewItem .removeImageButton:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+.infoItem input:invalid,
+.infoItem textarea:invalid {
+  border-color: red;
+}

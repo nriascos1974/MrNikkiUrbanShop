@@ -26,7 +26,7 @@ mongoose.connect(MONGO_DB_URI);
 //mongoose.connect("mongodb://127.0.0.1:27017/marketplace")
 
 mongoose.connection.on("open", (_) => {
-  console.log("Database is connected to Atlas");
+  console.log("Database is connected");
 });
 
 mongoose.connection.on("error", (error) => {
@@ -46,7 +46,7 @@ const load = async () => {
   await Question.deleteMany();
   await Role.deleteMany();
   await Wallet.deleteMany()
-  //await LogAdmin.deleteMany()
+  await LogAdmin.deleteMany()
   //await City.deleteMany();
   //await Department.deleteMany();
 
@@ -54,13 +54,13 @@ const load = async () => {
   await rolesTest();
   await userTest();
   await createMainCategories();
-  await productTest();
-  await QuestionTest()
+  //await productTest();
+  //await QuestionTest();
 
 };
-//const Data = new LogAdmin()
-//Data.save()
-//load();
+const Data = new LogAdmin()
+Data.save()
+load();
 //logBalanceToday()
 
 const user = "6463aad67414c82d6e56b92d"

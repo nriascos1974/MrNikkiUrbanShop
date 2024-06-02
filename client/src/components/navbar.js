@@ -3,7 +3,10 @@ import Image from 'next/image';
 import SearchBar from './searchbar';
 import Link from 'next/link';
 import { useSelector ,useDispatch } from 'react-redux';
-import { openMenu } from '@/redux/features/menu/menuSlice';
+import logo from "../../public/pacto-logo.png";
+import user from "../../public/image/user.png";
+import cart from "../../public/image/cart.png";
+//import { openMenu } from '@/redux/features/menu/m enuSlice';
 import { useEffect } from 'react';
 
 
@@ -24,7 +27,7 @@ export default function NavBar(){
         <nav className={style.container}>
             <div className={style.logo}>
                 <Link href={"/"}>
-                    <Image priority src="/pacto-logo.png" alt="logo" width="140" height="140"/>
+                    <Image priority src={logo} alt="logo" width="140" height="140"/>
                 </Link>
             </div>
 
@@ -77,7 +80,7 @@ export default function NavBar(){
                         <div className={style.userPerfil}>
                             <button className={style.red}>
                                 <Link href="/login">
-                                    <Image priority src="/image/user.png" alt="user" width="35" height="35"/>
+                                    <Image priority src={user} alt="user" width="35" height="35"/>
                                 </Link>
                             </button> 
                         </div>
@@ -85,7 +88,7 @@ export default function NavBar(){
                             <div className={style.userPerfil}>
                                 <button className={style.red}>
                                 <Link href="/profileUser">
-                                    <Image priority src="/image/user.png" alt="user" width="35" height="35"/>
+                                    <Image priority src={user} alt="user" width="35" height="35"/>
                                 </Link>
                                 </button>
                                 <h6>Bienvenido {userState.user.firstname}!</h6> 
@@ -95,7 +98,7 @@ export default function NavBar(){
                 <div className={style.shoppingCart}>
                 <button>
                     <Link href="/cart/detailCart">
-                        <Image priority src="/image/cart.png" alt="cart" width="35" height="35"/>
+                        <Image priority src={cart} alt="cart" width="35" height="35"/>
                     </Link>
                 </button>
                 

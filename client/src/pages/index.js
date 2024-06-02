@@ -20,10 +20,10 @@ export default function Home() {
   return (
     <>
       <Layout title="Home">
-        <Slider />
+        {/* <Slider />
         <Destacados />
         <Reviews/>
-        <Boletin />
+        <Boletin /> */}
       </Layout>
     </>
   )

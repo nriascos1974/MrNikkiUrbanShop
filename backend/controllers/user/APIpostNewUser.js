@@ -9,7 +9,7 @@ require("dotenv").config();
 const jwt = require("jsonwebtoken");
 const JWT_PRIVATE_KEY = process.env.JWT_PRIVATE_KEY;
 
-//Si el nuevo usuario se postea esta funcion retornará al usuario en si, si no retorna false
+//Si el nuevo usuario se guarda esta funcion retornará al usuario, si no retorna false
 const postNewUser = async (req, res) => {
   const userData = req.body;
 
@@ -27,6 +27,7 @@ const postNewUser = async (req, res) => {
     //verificiar si el usuario existe
     const verify = await checkUserExists(null, userData.email);
     if (!verify) {
+      
         //crear usuario
         const newUser = await createUser(userData);
 

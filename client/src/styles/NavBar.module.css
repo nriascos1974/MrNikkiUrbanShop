@@ -4,7 +4,7 @@
   align-items: center;
   padding: 0.5rem 2rem;
 
-  background-color: var(--gris-claro);
+  background-color: var(--azulBabyBlue);
 }
 
 .logo {
@@ -96,7 +96,7 @@
 
 
 .btn {
-  color: var(--verde);
+  color: var(--verdeAzul);
   font-weight: bold;
   font-size: larger;
   cursor: pointer;

@@ -29,6 +29,12 @@
   /* border: 2px solid blue; */
 }
 
+.div3 img {
+  height: 3rem;
+
+  /* border: 2px solid blue; */
+}
+
 .div3 h2 {
   font-size: larger;
   /* border: 2px solid green; */

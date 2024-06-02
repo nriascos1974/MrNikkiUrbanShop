@@ -9,7 +9,7 @@ module.exports = async (email, query) => {
         if (query === null) {
             const codeverified = Math.floor(Math.random() * 900000) + 100000;
             const usercodevalidate = await User.findByIdAndUpdate(user._id, { codeverified })
-            // aca iria el codigo para enviar el mail
+            // aca va el codigo para enviar el mail
             // console.log(codeverified,user.codeverified);
             // console.log(usercodevalidate);
             await sendWelcomeEmail(email,codeverified)

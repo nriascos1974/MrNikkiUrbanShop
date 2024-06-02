@@ -12,7 +12,7 @@ async function sendWelcomeEmail(email,code) {
 
   const msg = {
     to: email,
-    from: 'pactopf2023@gmail.com',
+    from: 'mrnikkishop@gmail.com',
     templateId: SENDGRID_TEMPLATE_ID_SIGNUP,
     dynamic_template_data: {
       code: code,
@@ -28,7 +28,7 @@ async function sendRecoveryEmail(email,code) {
 
   const msg = {
     to: email,
-    from: 'pactopf2023@gmail.com',
+    from: 'mrnikkishop@gmail.com',
     templateId: SENDGRID_TEMPLATE_ID_RECOVERY,
     dynamic_template_data: {
       code: code,

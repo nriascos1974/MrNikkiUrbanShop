@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-// Función para banear usuario
+// Función para bloquear usuario
 export const banUser = async (id) => {
     const user_verified_token = localStorage.getItem("user_verified");
     try {

@@ -4,7 +4,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: beige; */
+    background-color: var(--azulBabyBlue);
+    color: var(--verdeAzul);
 }
 
 .contact{
@@ -49,7 +50,7 @@
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    color: #9362D3;
+    color: var(--verdeAzul);
     font-size: 35px;
 }
 

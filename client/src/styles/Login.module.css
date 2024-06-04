@@ -40,7 +40,7 @@
 }
 
 .sign span{
-    color: var(--rosa);
+    color: var(--azulOscuro);
     align-items: center;
     margin-left: 10px;
 }
@@ -54,7 +54,7 @@
 
 .selects{
     padding: 10px;
-    border: 1px solid var(--verde);
+    border: 1px solid var(--verdeAzul);
     border-radius: 5px;
     outline: none;
     margin-bottom: 10px;
@@ -70,7 +70,7 @@
 
 .inputs{
     padding: 10px;
-    border: 1px solid var(--verde);
+    border: 1px solid var(--verdeAzul);
     border-radius: 5px;
     outline: none;
     margin-bottom: 10px;
@@ -101,7 +101,7 @@
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background: var(--verde);
+    background: var(--azulOscuro);
     color: var(--blanco);
     font-weight: 600;
     cursor: pointer;
@@ -140,6 +140,7 @@
     font-weight: 500;
 /* border: 2px solid blue; */
 }
+
 
 /* media queries */
 

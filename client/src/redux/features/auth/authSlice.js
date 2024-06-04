@@ -14,7 +14,7 @@ const initialState = {
 export const registerUser = createAsyncThunk(
   "auth/registerUser",
   async (userData) => {
-    // console.log(userData);
+     console.log(userData);
     const response = await axios.post("/user", userData);
     return response.data;
   }
@@ -24,7 +24,7 @@ export const registerUser = createAsyncThunk(
 export const loginUser = createAsyncThunk(
   "auth/loginUser",
   async ({email,password}) => {
-    // console.log(`/login?email=${email}&password=${password}`);
+     console.log(`/login?email=${email}&password=${password}`);
 
     const response = await axios.get(`/login?email=${email}&password=${password}`);
     return response.data;
@@ -55,7 +55,7 @@ export const autoLoginUser = createAsyncThunk(
 export const verifyCode = createAsyncThunk(
   "auth/fetchUserData",
   async ({ email, code, token }) => {
-    // console.log(token,email)
+     console.log(token,email)
     const response = await axios.get(
       `/verify?email=${email}&code=${Number(code)}`,
       {

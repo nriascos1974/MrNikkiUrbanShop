@@ -33,7 +33,7 @@ const validate = (dataEdit) => {
         if(!value){
             errors[name] = 'El número de teléfono no puede estar vacío';
         }
-        if(!/^\d{1,9}$/.test(value)){
+        if(!/^\d{1,10}$/.test(value)){
             errors[name] = 'El número de teléfono introducido es inválido';
         }
     }

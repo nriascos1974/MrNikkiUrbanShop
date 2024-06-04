@@ -1,11 +1,13 @@
 .container {
+  padding: 10px;
   width: 100%;
-  /* border: 2px solid red;    */
+  /* border: 2px solid red;   */
 }
 
 .sliderItem img {
+  
   width: 1200px;
-  height: 450px;
+  height: 430px;
   object-fit: cover;
 }
 
@@ -14,13 +16,13 @@
 }
 
 .sliderTitle h3 {
-  color: var(--gris-claro);
+  color: var(--azulOscuro);
   font-weight: bold;
   text-shadow: 4px 4px 1rem rgba(0, 0, 0, 1);
 }
 
 .sliderTitle p {
-  color: var(--amarillo);
+  color: var(--naranja);
   font-weight: bold;
   text-shadow: 4px 4px 1rem rgba(0, 0, 0, 1);
 }

@@ -14,14 +14,14 @@ function generateNewtoken(userId) {
 const login = async (req, res) => {
   try {
     const { email, password } = req.query;
-    
-    if (!req.user) {
 
+    if (!req.user) {
       if (email && password) {
         const user = await checkUserExists(null, email);
         //Verifico que el usuario ingresado exista en la db
         if (user) {
-          if (user.state){
+          console.log(user.state);
+          if (user.state) {
             let token = "";
 
             //Si el usuario existe Y está verificado, entonces comprueba las coincidencias de las password para loggear o no.
@@ -43,17 +43,15 @@ const login = async (req, res) => {
                   products: user.products,
                   calification: user.calification,
                   phone: user.phone,
-                  role: user.role
+                  role: user.role,
                 };
 
-                return res
-                  .status(200)
-                  .json({
-                    msg: "Inicio de sesión exitoso",
-                    verified: true,
-                    token: token,
-                    user: userData
-                  });
+                return res.status(200).json({
+                  msg: "Inicio de sesión exitoso",
+                  verified: true,
+                  token: token,
+                  user: userData,
+                });
               }
 
               /** En caso de que la contraseña no coincida, al usuario NO se le generará un nuevo token */
@@ -66,18 +64,18 @@ const login = async (req, res) => {
             token = generateNewtoken(user._id);
             const codeSend = await DBUserVerified(user.email, null);
 
-            return res
-              .status(401)
-              .json({
-                msg: "Credenciales del usuario validas pero no esta verificado!",
-                verified: false,
-                codeSend: codeSend,
-                token: token,
-              });
+            return res.status(401).json({
+              msg: "Credenciales del usuario validas pero no esta verificado!",
+              verified: false,
+              codeSend: codeSend,
+              token: token,
+            });
           }
 
-          return res.status(403).json({msg: "Su usuario se encuentra bloqueado"});
-      }
+          return res
+            .status(403)
+            .json({ msg: "Su usuario se encuentra bloqueado" });
+        }
 
         return res.status(401).json({ msg: "El usuario ingresado no existe!" });
       } else {
@@ -87,26 +85,16 @@ const login = async (req, res) => {
       }
     }
 
-   
-
-
-    return res
-      .status(200)
-      .json({
-        msg: "Inicio de sesión exitoso",
-        verified: true,
-        user: req.user,
-      });
-  
-
-
+    return res.status(200).json({
+      msg: "Inicio de sesión exitoso",
+      verified: true,
+      user: req.user,
+    });
   } catch (err) {
-    return res
-      .status(500)
-      .json({
-        error: err.message,
-        msg: "Error 500! Problemas internos con la conexión del servidor.",
-      });
+    return res.status(500).json({
+      error: err.message,
+      msg: "Error 500! Problemas internos con la conexión del servidor.",
+    });
   }
 };
 

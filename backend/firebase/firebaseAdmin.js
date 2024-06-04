@@ -16,8 +16,7 @@ const serviceAccount = {
   client_id: process.env.FIREBASE_ADMIN_CLIENT_ID,
   auth_uri: process.env.FIREBASE_ADMIN_AUTH_URI,
   token_uri: process.env.FIREBASE_ADMIN_TOKEN_URI,
-  auth_provider_x509_cert_url:
-    process.env.FIREBASE_ADMIN_AUTH_PROVIDER_X509_CERT_URL,
+  auth_provider_x509_cert_url: process.env.FIREBASE_ADMIN_AUTH_PROVIDER_X509_CERT_URL,
   client_x509_cert_url: process.env.FIREBASE_ADMIN_CLIENT_X509_CERT_URL,
   universe_domain: process.env.FIREBASE_ADMIN_UNIVERSE_DOMAIN,
 };
@@ -31,9 +30,12 @@ const firebaseAdminAuth = admin.auth();
 firebaseAdminRouter.get("/authgoogle", async (req, res) => {
   try {
     const { uid } = req.query;
+    // console.log("este es el codigo  ->"+uid);
     const user = await firebaseAdminAuth.getUser(uid);
+    // console.log("este es el user  ->"+user);
+    // console.log("este es el Correo del usuario  ->"+user.email);
     const userdb = await checkUserExists(null, user.email);
-    console.log(userdb);
+    // console.log("este es el usuario  DB ->"+userdb);
     if (userdb === null) {
       const aux = user.displayName.split(" ");
       const phonenumber = user.phoneNumber ? user.phoneNumber : null;
@@ -48,12 +50,18 @@ firebaseAdminRouter.get("/authgoogle", async (req, res) => {
         address: "None",
       };
       const response = await createUser(newUser, true);
+      //console.log("User _id ->"+response);
+
       const tokenPayload = { userId: response._id };
+      //console.log("tokenPayload 1->"+tokenPayload);
+
       const token = jwt.sign(tokenPayload, process.env.JWT_PRIVATE_KEY);
 
       res.status(200).json({ user: response, token });
     } else {
       const tokenPayload = { userId: userdb._id };
+      //console.log("tokenPayload 2->"+tokenPayload);
+
       const token = jwt.sign(tokenPayload, process.env.JWT_PRIVATE_KEY);
 
       res.status(200).json({ user: userdb, token });

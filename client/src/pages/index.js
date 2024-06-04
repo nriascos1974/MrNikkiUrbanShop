@@ -20,8 +20,8 @@ export default function Home() {
   return (
     <>
       <Layout title="Home">
-        {/* <Slider />
-        <Destacados />
+         <Slider />
+       {/* <Destacados />
         <Reviews/>
         <Boletin /> */}
       </Layout>

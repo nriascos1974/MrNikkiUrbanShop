@@ -1,8 +1,8 @@
 import styles from '../../styles/nosotros.module.css';
 import Layout from '@/components/layout';
 import Link from 'next/link';
-import EnConstruccion from '@/components/enConstruccion';
 import Image from 'next/image';
+import logo from "../../../public/pacto-logo.png";
 
 
 export default function Nosotros() {
@@ -22,7 +22,7 @@ export default function Nosotros() {
                         <p>Crea Tu Estilo Estampa Tu Idea.</p>
                     </div>
                 </div>
-                <Image className={styles.img} priority src="/pacto-logo.png" alt="logo" width="600" height="600"/>
+                <Image className={styles.img} priority src={logo} alt="logo" width="600" height="600"/>
             </div>
             <Link href={"/nosotros/terminos"}>
                 <button className={styles.button}>Términos y condiciones</button>

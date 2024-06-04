@@ -22,7 +22,7 @@
 .button{
     align-self: center;
 
-    background-color: var(--verde);
+    background-color: var(--azulOscuro);
     color: white;
     font-size: 15px;
     font-weight: 500;

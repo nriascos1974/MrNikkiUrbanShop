@@ -12,6 +12,7 @@ import { GoogleButton } from 'react-google-button';
 import { auth } from "../components/firebase";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { useAuthState } from 'react-firebase-hooks/auth';
+import logo from "../../public/pacto-logo.png";
 
 
 
@@ -26,6 +27,7 @@ export default function login(){
 
     const authGoogle = async () => {
         const response = await signInWithPopup(auth, googleAuth);
+        console.log(response);
         await dispatch(loginGoogle(response.user.uid))
     };
 
@@ -79,13 +81,13 @@ export default function login(){
                 <title>Mr. Nikki Shop | Login</title>
                 <meta name="description" content="Mr. Nikki Shop" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/pacto-logo.png" />
+                <link rel="icon" href={logo} />
             </Head>
 
             <div className= {style.containerLogin}>
                 <div>
                     <Link href="/">
-                        <Image className= {style.logo} priority src="/pacto-logo.png" alt="logo" width="140" height="140"/>
+                        <Image className= {style.logo} priority src={logo} alt="logo" width="140" height="140"/>
                     </Link>
                     <h3>¡Hola! Para seguir, ingresa tu email y contraseña</h3>
                     <div className={style.sign}>
@@ -94,9 +96,11 @@ export default function login(){
                             <span>Registrate</span>
                         </Link>
                     </div>
+                    <p>-----</p>
                     <div className={style.google} >
-                        <GoogleButton type='light' onClick={authGoogle}/>
+                        <GoogleButton onClick={authGoogle}/>
                     </div>
+                   
                 </div>
 
                 

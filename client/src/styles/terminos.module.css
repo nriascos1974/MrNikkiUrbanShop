@@ -9,10 +9,10 @@
 
 
 .section h1{
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--lila);
     margin-bottom: 1rem;
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--azul);
 }
 
 .section div{

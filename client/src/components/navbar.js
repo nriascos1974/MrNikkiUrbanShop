@@ -4,9 +4,10 @@ import SearchBar from './searchbar';
 import Link from 'next/link';
 import { useSelector ,useDispatch } from 'react-redux';
 import logo from "../../public/pacto-logo.png";
+import menu from "../../public/image/menu.png";
 import user from "../../public/image/user.png";
 import cart from "../../public/image/cart.png";
-//import { openMenu } from '@/redux/features/menu/m enuSlice';
+import { openMenu } from '@/redux/features/menu/menuSlice';
 import { useEffect } from 'react';
 
 
@@ -32,7 +33,7 @@ export default function NavBar(){
             </div>
 
             <div className={style.menu} onClick={handlerOpenMenu}>
-                <Image priority src="/image/menu.svg" alt="logo" width="30" height="30" />
+                <Image priority src={menu} alt="logo" width="30" height="30" />
             </div>
 
             <div className={style.navigation}>

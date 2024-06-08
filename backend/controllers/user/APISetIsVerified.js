@@ -75,6 +75,7 @@ const setVerified = async (req, res) => {
         verified: true,
         token: token,
         user: userData,
+        
       });
     }
 

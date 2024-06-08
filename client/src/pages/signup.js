@@ -4,7 +4,6 @@ import Image from "next/image";
 import style from "../styles/Login.module.css";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { signUpUser } from "@/redux/features/auth/authSlice";
 import { useRouter } from "next/router";
 import { registerUser, verifyCode } from "@/redux/features/auth/authSlice";
 import { sendCode } from "@/redux/features/auth/authSlice";
@@ -13,24 +12,28 @@ import {
   getCities,
 } from "@/redux/features/departments/departmentsSlice";
 import validate from "@/utils/validation/validationUser";
-import { MdDepartureBoard, MdElectricalServices } from "react-icons/md";
 import logo from "../../public/pacto-logo.png";
 
 export default function login() {
   const dispatch = useDispatch();
 
   const userState = useSelector((state) => state.user);
+   
+
   const navigate = useRouter();
 
   useEffect(() => {
     if (userState.verify) {
       navigate.push("/");
+     
     }
+
     if (
       typeof window !== "undefined" &&
       localStorage.getItem("user_unverified")
     ) {
       dispatch(sendCode());
+      
     }
   }, [userState.verify]);
 
@@ -57,6 +60,7 @@ export default function login() {
     phone: "",
     department: "",
     city: "",
+    code: "",
   });
 
   const [activeInput, setActiveInput] = useState("");
@@ -92,6 +96,10 @@ export default function login() {
     dispatch(getDepartments());
   }, []);
 
+  useEffect(() => {
+    dispatch(getDepartments());
+  }, []);
+
   const { departments, cities } = useSelector((state) => state.locations);
 
   const handleDepaSelect = (e) => {
@@ -116,10 +124,6 @@ export default function login() {
     });
   };
 
-  // useEffect(() => {
-  //   console.log(user)
-  // }, [user])
-
   /*---------------------------------------------------------------------------------------------------*/
 
   const handleSubmit = (event) => {
@@ -137,6 +141,10 @@ export default function login() {
         token: localStorage.getItem("user_unverified"),
       })
     );
+    setUser({
+      ...user,
+      "code": "",
+    });
   };
 
   return (
@@ -152,7 +160,7 @@ export default function login() {
         {userState.sendCode ? (
           <div className={style.containerLogin}>
             <form className={style.form__Login} onSubmit={handleSubmit}>
-              <label>Código:</label>
+              <label>* Código:</label>
               <input
                 className={style.inputs}
                 value={user.code}
@@ -161,8 +169,7 @@ export default function login() {
                 placeholder="Ingresa el código"
                 onChange={(e) => handleChange(e)}
               />
-
-              <button type="submit" onClick={handleSubmitCode}>
+               <button type="submit" onClick={handleSubmitCode}>
                 Enviar
               </button>
             </form>
@@ -190,7 +197,7 @@ export default function login() {
             </div>
 
             <form className={style.form__Login} onSubmit={handleSubmit}>
-              <label>Email:</label>
+              <label>* Email:</label>
               <input
                 className={errors.email ? style.inputsError : style.inputs}
                 value={user.email}
@@ -204,7 +211,7 @@ export default function login() {
                 <p className={style.error}>{errors.email}</p>
               )}
 
-              <label>Nombre:</label>
+              <label>* Nombre:</label>
               <input
                 className={errors.firstname ? style.inputsError : style.inputs}
                 value={user.firstname}
@@ -218,7 +225,7 @@ export default function login() {
                 <p className={style.error}>{errors.firstname}</p>
               )}
 
-              <label>Apellido:</label>
+              <label>* Apellido:</label>
               <input
                 className={errors.lastname ? style.inputsError : style.inputs}
                 value={user.lastname}
@@ -232,7 +239,7 @@ export default function login() {
                 <p className={style.error}>{errors.lastname}</p>
               )}
 
-              <label>Departamento:</label>
+              <label>* Departamento:</label>
               <select
                 className={
                   !user.department ? style.selectsError : style.selects
@@ -257,7 +264,7 @@ export default function login() {
                   ))}
               </select>
 
-              <label>Ciudad:</label>
+              <label>* Ciudad:</label>
               <select
                 className={!user.city ? style.selectsError : style.selects}
                 name="city"
@@ -280,7 +287,7 @@ export default function login() {
                   ))}
               </select>
 
-              <label>Dirección:</label>
+              <label>* Dirección:</label>
               <input
                 className={errors.address ? style.inputsError : style.inputs}
                 value={user.address}
@@ -294,7 +301,7 @@ export default function login() {
                 <p className={style.error}>{errors.address}</p>
               )}
 
-              <label>Teléfono:</label>
+              <label>* Teléfono:</label>
               <input
                 className={errors.phone ? style.inputsError : style.inputs}
                 value={user.phone}
@@ -308,7 +315,7 @@ export default function login() {
                 <p className={style.error}>{errors.phone}</p>
               )}
 
-              <label>Contraseña:</label>
+              <label>* Contraseña:</label>
               <input
                 className={errors.password ? style.inputsError : style.inputs}
                 value={user.password}
@@ -329,7 +336,7 @@ export default function login() {
                   onClick={handleTerminos}
                 />
                 <div>
-                  Aceptar{" "}
+                  * Aceptar{" "}
                   <Link href="/nosotros/terminos">Términos y condiciones</Link>
                 </div>
               </div>
@@ -354,8 +361,8 @@ export default function login() {
                     Registrate
                   </button>
                   <p className={style.error}>
-                    Todos los datos deben estar completos y correctos para poder
-                    registrarse
+                    * Todos los datos deben estar completos y correctos para
+                    poder registrarse
                   </p>
                 </>
               ) : (

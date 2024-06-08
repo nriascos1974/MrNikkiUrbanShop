@@ -8,13 +8,14 @@ const initialState = {
   loading: false,
   error: null,
   verify: false,
+  msg: false,
 };
 
 // Async thunk para enviar los datos del usuario al backend y recibir la respuesta con el token y código de verificación
 export const registerUser = createAsyncThunk(
   "auth/registerUser",
   async (userData) => {
-     console.log(userData);
+    console.log(userData);
     const response = await axios.post("/user", userData);
     return response.data;
   }
@@ -23,10 +24,12 @@ export const registerUser = createAsyncThunk(
 // Async thunk para enviar logear al usuario
 export const loginUser = createAsyncThunk(
   "auth/loginUser",
-  async ({email,password}) => {
-     console.log(`/login?email=${email}&password=${password}`);
+  async ({ email, password }) => {
+    console.log(`/login?email=${email}&password=${password}`);
 
-    const response = await axios.get(`/login?email=${email}&password=${password}`);
+    const response = await axios.get(
+      `/login?email=${email}&password=${password}`
+    );
     return response.data;
   }
 );
@@ -55,7 +58,7 @@ export const autoLoginUser = createAsyncThunk(
 export const verifyCode = createAsyncThunk(
   "auth/fetchUserData",
   async ({ email, code, token }) => {
-     console.log(token,email)
+    console.log(token, email);
     const response = await axios.get(
       `/verify?email=${email}&code=${Number(code)}`,
       {
@@ -67,26 +70,23 @@ export const verifyCode = createAsyncThunk(
 );
 
 // Async thunk para enviar el UID al backend para el usuario de GOOGLE y recibir datos del user creado en la base de datos
-export const loginGoogle = createAsyncThunk(
-  "auth/loginGoogle",
-  async (uid) => {
-    const response = await axios.get(`/authgoogle?uid=${uid}`);
-    return response.data;
-  }
-)
+export const loginGoogle = createAsyncThunk("auth/loginGoogle", async (uid) => {
+  const response = await axios.get(`/authgoogle?uid=${uid}`);
+  return response.data;
+});
 
 // Async thunk para editar datos de un usuario
 export const putEditUser = createAsyncThunk(
   "auth/editUser",
-  async(user,{getState,dispatch}) => {
-    const response = await axios.put('/edituser', user);
+  async (user, { getState, dispatch }) => {
+    const response = await axios.put("/edituser", user);
     const user_unverified_token = localStorage.getItem("user_verified");
-    
-    dispatch(autoLoginUser(user_unverified_token))
+
+    dispatch(autoLoginUser(user_unverified_token));
     // console.log(response.data);
     // return response.data;
   }
-)
+);
 // Async thunk para deslogear al usuario
 // export const logOut = createAsyncThunk(
 //   "auth/logOut",
@@ -102,13 +102,13 @@ const authSlice = createSlice({
   initialState,
   reducers: {
     sendCode: (state) => {
-     state.sendCode = true
-  },
-  logOut: (state) => {
-    state.user = null
-    localStorage.removeItem("user_verified")
-    localStorage.removeItem("shopping_cart")
-  }
+      state.sendCode = true;
+    },
+    logOut: (state) => {
+      state.user = null;
+      localStorage.removeItem("user_verified");
+      localStorage.removeItem("shopping_cart");
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -139,13 +139,16 @@ const authSlice = createSlice({
       // Acciones para enviar el código de verificación y recibir los datos del usuario
       .addCase(verifyCode.pending, (state) => {
         state.loading = true;
+    
       })
       .addCase(verifyCode.fulfilled, (state, action) => {
         state.loading = false;
         state.sendCode = false;
         state.user = action.payload.user;
         state.token = action.payload.token;
+        state.msg = action.payload.msg;
         state.verify = true;
+        //state.msg = true;
         localStorage.removeItem("user_unverified");
         localStorage.setItem("user_verified", action.payload.token);
       })
@@ -153,10 +156,11 @@ const authSlice = createSlice({
         state.loading = false;
         state.error = action.payload;
         state.sendCode = true;
+        console.log(action);
       })
 
-       // Acciones para login
-       .addCase(loginUser.pending, (state) => {
+      // Acciones para login
+      .addCase(loginUser.pending, (state) => {
         state.loading = true;
       })
       .addCase(loginUser.fulfilled, (state, action) => {
@@ -199,9 +203,9 @@ const authSlice = createSlice({
       .addCase(putEditUser.rejected, (state, action) => {
         state.loading = false;
         state.error = action.payload;
-      })
+      });
   },
 });
 
-export const { sendCode,logOut } = authSlice.actions
+export const { sendCode, logOut } = authSlice.actions;
 export default authSlice.reducer;

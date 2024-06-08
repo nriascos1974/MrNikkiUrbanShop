@@ -8,7 +8,7 @@
 }
 
 .containerProfileData{
-    border: 2px solid var(--verde);
+    border: 2px solid var(--verdeAzul);
     background-color: var(--gris-claro);
     border-radius: 1.5rem;
     display: flex;
@@ -22,7 +22,7 @@
     font-weight: bold;
     text-align: left;
     margin: 30px 20px;
-    color: var(--verde);
+    color: var(--azulOscuro);
 }
 
 .profileDataTitle{
@@ -37,7 +37,7 @@
     font-weight: medium;
     text-align: left;
     margin: 30px 20px;
-    color: var(--verde);
+    color: var(--azulOscuro);
 }
 
 .lapiz {
@@ -61,7 +61,7 @@
 
     border: none;
     border-radius: 5px;
-    background: var(--lila) !important;
+    background: var(--verdeAzul) !important;
     color: var(--blanco);
     font-weight: 600;
     cursor: pointer;
@@ -83,7 +83,7 @@
 
 .form__Login input{
     padding: 10px;
-    border: 1px solid var(--verde);
+    border: 1px solid var(--verdeAzul);
     font-weight: 600;
     border-radius: 5px;
     outline: none;
@@ -110,7 +110,7 @@
 
 .form__Login_Edit input{
     padding: 10px;
-    border: 1px solid var(--azul);
+    border: 1px solid var(--verdeAzul);
     font-weight: 600;
     border-radius: 5px;
     outline: none;
@@ -120,7 +120,7 @@
 
 .form__Login_Edit select{
     padding: 10px;
-    border: 1px solid var(--azul);
+    border: 1px solid var(--verdeAzul);
     font-weight: 600;
     border-radius: 5px;
     outline: none;
@@ -132,7 +132,7 @@
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background: var(--verde);
+    background: var(--azulOscuro);
     color: var(--blanco);
     font-weight: 600;
     cursor: pointer;
@@ -157,7 +157,7 @@
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background: var(--verde);
+    background: var(--azulOscuro);
     color: var(--blanco);
     font-weight: 600;
     cursor: pointer;

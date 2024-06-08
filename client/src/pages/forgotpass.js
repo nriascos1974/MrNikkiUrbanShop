@@ -1,45 +1,56 @@
-import Head from "next/head"
-import Link from "next/link"
-import Image from "next/image"
-import style from "../styles/Login.module.css"
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
+import style from "../styles/Login.module.css";
+import logo from "../../public/pacto-logo.png";
 
 
-export default function forgotpass(){
+export default function forgotpass() {
 
-    return (
-        <div className= {style.login}>
-            <Head>
-                <title>PACTO | Recuperar Contraseña</title>
-                <meta name="description" content="PACTO" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/pacto-logo.png" />
-            </Head>
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-            <div className= {style.containerLogin}>
-                <div>
-                    <Link href="/">
-                        <Image className= {style.logo} priority src="/pacto-logo.png" alt="logo" width="140" height="140"/>
-                    </Link>
-                    <h3>Recuperar contraseña</h3>
-                    <p>Recibirás enlace de confirmación para el respectivo cambio</p>
-                    <div className={style.sign}>
-                        <p>¿Ya tienes una cuenta?</p>
-                        <Link href="/login">
-                            <span>Inicia Sesión</span>
-                        </Link>
-                    </div>
-                </div>
+    dispatch(registerUser(user));
+  };
 
-                
-                    <form className={style.form__Login}>
-                        <label>Email:</label>
-                        <input type="email" placeholder="Email" />
+  return (
+    <div className={style.login}>
+      <Head>
+        <title>Mr. Nikki Shop | Recuperar Contraseña</title>
+        <meta name="description" content="Mr. Nikki Shop" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href={logo} />
+      </Head>
 
-                        <button>Enviar</button>
-                    </form>
-                
-            </div>
-
+      <div className={style.containerLogin}>
+        <div>
+          <Link href="/">
+            <Image
+              className={style.logo}
+              priority
+              src={logo}
+              alt="logo"
+              width="140"
+              height="140"
+            />
+          </Link>
+          <h3>Recuperar contraseña</h3>
+          <p>Recibirás enlace de confirmación para el respectivo cambio</p>
+          <div className={style.sign}>
+            <p>¿Ya tienes una cuenta?</p>
+            <Link href="/login">
+              <span>Inicia Sesión</span>
+            </Link>
+          </div>
         </div>
-    )
+
+        <form className={style.form__Login} onSubmit={handleSubmit}>
+          <label>Email:</label>
+          <input type="email" className={style.inputs} placeholder="Email" />
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  );
 }

@@ -90,7 +90,7 @@
 
 .formProduct .formSection input {
   padding: 1rem;
-  border: 1px solid var(--verde);
+  border: 1px solid var(--verdeAzul);
   border-radius: 5px;
   outline: none;
   margin-bottom: 1rem;
@@ -101,7 +101,7 @@
   box-sizing: border-box;
   width: 100%;
   padding: 1rem;
-  border: 1px solid var(--verde);
+  border: 1px solid var(--verdeAzul);
   border-radius: 5px;
   outline: none;
   margin-bottom: 1rem;
@@ -109,7 +109,7 @@
 
 .formProduct .formSection select {
   padding: 0.5rem 1rem;
-  border: 1px solid var(--verde);
+  border: 1px solid var(--verdeAzul);
   border-radius: 5px;
   outline: none;
 }
@@ -150,7 +150,7 @@
   min-width: 100px;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  background-color: var(--verde);
+  background-color: var(--verdeAzul);
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -159,11 +159,11 @@
 }
 
 .photoSelectorLabel:hover {
-  background-color: rgb(65, 192, 144);
+  background-color: var(--azulOscuro);
 }
 
 .photoSelector:disabled + .photoSelectorLabel {
-  background-color: rgb(57, 178, 132, 0.5);
+  background-color:var(--azulOscuro);
   color: rgba(255, 255, 255, 0.5);
   cursor: not-allowed;
 }
@@ -188,7 +188,7 @@
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 5px;
-  background: var(--verde);
+  background: var(--azulOscuro);
   color: var(--blanco);
   font-weight: 600;
   cursor: pointer;
@@ -197,7 +197,7 @@
 }
 
 .buttonSubmit:disabled {
-  background-color: rgb(57, 178, 132, 0.5);
+  background-color: var(--azulOscuro);
   color: rgba(255, 255, 255, 0.5);
   cursor: not-allowed;
 }

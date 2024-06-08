@@ -12,6 +12,7 @@ const JWT_PRIVATE_KEY = process.env.JWT_PRIVATE_KEY;
 //Si el nuevo usuario se guarda esta funcion retornará al usuario, si no retorna false
 const postNewUser = async (req, res) => {
   const userData = req.body;
+  console.log(userData);
 
   /*  Con la función hashSyn de bcrypt me aseguro de encriptar la contraseña hasheandola 
        Esta funcion toma dos parametros, el string a hashear/encriptar y el numero de rondas (iteraciones) que hará para encriptar ese string enviado.

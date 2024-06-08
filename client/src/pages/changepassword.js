@@ -2,6 +2,7 @@ import Head from "next/head"
 import Link from "next/link"
 import Image from "next/image"
 import style from "../styles/Login.module.css"
+import logo from "../../public/pacto-logo.png";
 
 
 export default function changepassword(){
@@ -9,16 +10,16 @@ export default function changepassword(){
     return (
         <div className= {style.login}>
             <Head>
-                <title>PACTO | Cambio de contraseña</title>
-                <meta name="description" content="PACTO" />
+                <title>Mr. Nikki Shop | Cambio de contraseña</title>
+                <meta name="description" content="Mr. Nikki Shop" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/pacto-logo.png" />
+                <link rel="icon" href={logo} />
             </Head>
 
             <div className= {style.containerLogin}>
                 <div>
                     <Link href="/">
-                        <Image className= {style.logo} priority src="/pacto-logo.png" alt="logo" width="140" height="140"/>
+                        <Image className= {style.logo} priority src={logo} alt="logo" width="140" height="140"/>
                     </Link>
                     <h3>Cambiar tu contraseña</h3>
                     <div className={style.sign}>

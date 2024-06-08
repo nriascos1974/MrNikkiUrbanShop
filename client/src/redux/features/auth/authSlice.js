@@ -22,6 +22,16 @@ export const registerUser = createAsyncThunk(
   }
 );
 
+// Async thunk para enviar los datos del usuario al backend y recibir la respuesta con el token y código de verificación
+export const recoveryPassword = createAsyncThunk(
+  "auth/recoveryPassword",
+  async (userData) => {
+    console.log(userData);
+    const response = await axios.put("/recovery", userData);
+    return response.data;
+  }
+);
+
 // Async thunk para enviar logear al usuario
 export const loginUser = createAsyncThunk(
   "auth/loginUser",
@@ -160,6 +170,7 @@ const authSlice = createSlice({
       .addCase(autoLoginUser.fulfilled, (state, action) => {
         state.user = action.payload.user;
       })
+
       // Acciones para enviar el código de verificación y recibir los datos del usuario
       .addCase(verifyCode.pending, (state) => {
         state.loading = true;
@@ -181,6 +192,21 @@ const authSlice = createSlice({
         state.error = action.payload;
         state.sendCode = true;
         console.log(action);
+      })
+      
+      // Acciones para el cambio de contraseña y recibir los datos del usuario
+      .addCase(recoveryPassword.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(recoveryPassword.fulfilled, (state, action) => {
+        state.loading = false;
+        state.user = action.payload.user;
+        state.msg = action.payload.msg;
+        state.verify = true;
+      })
+      .addCase(recoveryPassword.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload;
       })
 
       // Acciones para login

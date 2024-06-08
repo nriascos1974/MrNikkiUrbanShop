@@ -24,6 +24,7 @@ const recoveryPassword = async (req, res) => {
                         firstname: user.firstname,
                         email: user.email,
                         adress: user.address,
+                        city: user.city,
                         products: user.products,
                         calification: user.calification,
                         phone: user.phone,

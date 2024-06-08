@@ -50,6 +50,7 @@ export default function forgotpass() {
   const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(codeUserMail(user));
+    
     setUser({
         ...user,
         ["email"]: "",

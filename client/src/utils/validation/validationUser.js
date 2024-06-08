@@ -31,7 +31,7 @@ const validate = (dataEdit) => {
       errors[name] = "La dirección no puede superar los 60 caracteres";
     }
   }
-  if (name === "codigo") {
+  if (name === "code") {
     if (!value) {
       errors[name] = "El código no puede estar vacío";
     }

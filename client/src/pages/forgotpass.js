@@ -3,14 +3,57 @@ import Link from "next/link";
 import Image from "next/image";
 import style from "../styles/Login.module.css";
 import logo from "../../public/pacto-logo.png";
-
+import { codeUserMail } from "@/redux/features/auth/authSlice";
+import validate from "@/utils/validation/validationUser";
+import { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useRouter } from "next/router";
 
 export default function forgotpass() {
+  const dispatch = useDispatch();
+  const userState = useSelector((state) => state.user);
+  const navigate = useRouter();
+
+  useEffect(() => {
+    if (userState.recovery) {
+      navigate.push("/changepassword");
+    }
+  }, [userState.recovery]);
+
+  const [user, setUser] = useState({
+    email: "",
+  });
+
+  // Errors State
+  const [errors, setErrors] = useState({
+    email: "",
+  });
+
+  const handleInputFocus = (e) => {
+    setActiveInput(e.target.name);
+  };
+
+  const [activeInput, setActiveInput] = useState("");
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setUser({
+      ...user,
+      [name]: value,
+    });
+    setErrors({
+      ...errors,
+      [name]: validate({ [name]: value }),
+    });
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    dispatch(registerUser(user));
+    dispatch(codeUserMail(user));
+    setUser({
+        ...user,
+        ["email"]: "",
+      });
   };
 
   return (
@@ -46,8 +89,18 @@ export default function forgotpass() {
 
         <form className={style.form__Login} onSubmit={handleSubmit}>
           <label>Email:</label>
-          <input type="email" className={style.inputs} placeholder="Email" />
-
+          <input
+            type="email"
+            className={errors.email ? style.inputsError : style.inputs}
+            value={user.email}
+            name={"email"}
+            placeholder="Email"
+            onChange={(e) => handleChange(e)}
+            onFocus={handleInputFocus}
+          />
+          {activeInput === "email" && errors[activeInput] && (
+            <p className={style.error}>{errors.email}</p>
+          )}
           <button type="submit">Enviar</button>
         </form>
       </div>

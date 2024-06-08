@@ -31,6 +31,11 @@ const validate = (dataEdit) => {
       errors[name] = "La dirección no puede superar los 60 caracteres";
     }
   }
+  if (name === "codigo") {
+    if (!value) {
+      errors[name] = "El código no puede estar vacío";
+    }
+  }
   if (name === "phone") {
     if (!value) {
       errors[name] = "El número de teléfono no puede estar vacío";
@@ -40,6 +45,17 @@ const validate = (dataEdit) => {
     }
   }
   if (name === "password") {
+    if (!value) {
+      errors[name] = "La contraseña no puede estar vacío";
+    }
+    if (value.length < 8 || value.length > 20) {
+      errors[name] = "La contraseña debe tener entre 8 y 20 caracteres";
+    }
+    if (!/\d/.test(value)) {
+      errors[name] = "La contraseña debe contener al menos un número";
+    }
+  }
+  if (name === "passwordConfirm") {
     if (!value) {
       errors[name] = "La contraseña no puede estar vacío";
     }

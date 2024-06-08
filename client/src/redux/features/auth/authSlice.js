@@ -8,6 +8,7 @@ const initialState = {
   loading: false,
   error: null,
   verify: false,
+  recovery: false,
   msg: false,
 };
 
@@ -29,6 +30,17 @@ export const loginUser = createAsyncThunk(
 
     const response = await axios.get(
       `/login?email=${email}&password=${password}`
+    );
+    return response.data;
+  }
+);
+
+// Async thunk para enviar el mail del usuario y recibir el codigo de verificacion para cambiar password
+export const codeUserMail = createAsyncThunk(
+  "auth/codeUserMail",
+  async ({ email }) => {
+    const response = await axios.get(
+      `/recoverycode?email=${email}`
     );
     return response.data;
   }
@@ -124,6 +136,18 @@ const authSlice = createSlice({
         localStorage.setItem("user_unverified", action.payload.token);
       })
       .addCase(registerUser.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload;
+      })
+      // Acciones para enviar el correo del usuario y recibir el código de verificación
+      .addCase(codeUserMail.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(codeUserMail.fulfilled, (state, action) => {
+        state.loading = false;
+        state.recovery = true;
+      })
+      .addCase(codeUserMail.rejected, (state, action) => {
         state.loading = false;
         state.error = action.payload;
       })

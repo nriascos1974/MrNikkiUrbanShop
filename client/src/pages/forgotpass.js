@@ -15,10 +15,10 @@ export default function forgotpass() {
   const navigate = useRouter();
 
   useEffect(() => {
-    if (userState.recovery) {
+    if (userState.recoveryMail) {
       navigate.push("/changepassword");
     }
-  }, [userState.recovery]);
+  }, [userState.recoveryMail]);
 
   const [user, setUser] = useState({
     email: "",
@@ -50,11 +50,11 @@ export default function forgotpass() {
   const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(codeUserMail(user));
-    
+
     setUser({
-        ...user,
-        ["email"]: "",
-      });
+      ...user,
+      ["email"]: "",
+    });
   };
 
   return (
@@ -78,12 +78,16 @@ export default function forgotpass() {
               height="140"
             />
           </Link>
-          <h3>Recuperar contraseña</h3>
-          <p>Recibirás enlace de confirmación para el respectivo cambio</p>
+        
+          {/* <p>Recibirás enlace de confirmación para el respectivo cambio</p> */}
           <div className={style.sign}>
-            <p>¿Ya tienes una cuenta?</p>
             <Link href="/login">
               <span>Inicia Sesión</span>
+            </Link>
+          </div>
+          <div className={style.sign}>
+            <Link href="/changepassword">
+              <span>Cambiar Contraseña</span>
             </Link>
           </div>
         </div>

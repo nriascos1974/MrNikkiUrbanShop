@@ -89,14 +89,11 @@ export default function login(){
                     <Link href="/">
                         <Image className= {style.logo} priority src={logo} alt="logo" width="140" height="140"/>
                     </Link>
-                    <h3>¡Hola! Para seguir, ingresa tu email y contraseña</h3>
                     <div className={style.sign}>
-                        <p>¿Nuevo usuario?</p>
                         <Link href="/signup">
                             <span>Registrate</span>
                         </Link>
                     </div>
-                    <p>-----</p>
                     <div className={style.google} >
                         <GoogleButton onClick={authGoogle}/>
                     </div>

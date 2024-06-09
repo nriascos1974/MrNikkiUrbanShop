@@ -50,10 +50,10 @@ export default function changepassword() {
   };
 
   useEffect(() => {
-    if (userState.verify) {
+    if (userState.VerifyRecovery) {
       navigate.push("/");
     }
-  }, [userState.verify]);
+  }, [userState.VerifyRecovery]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -89,7 +89,6 @@ export default function changepassword() {
           </Link>
           <h3>Cambiar tu contraseña</h3>
           <div className={style.sign}>
-            <p>¿Ya tienes una cuenta?</p>
             <Link href="/login">
               <span>Inicia Sesión</span>
             </Link>

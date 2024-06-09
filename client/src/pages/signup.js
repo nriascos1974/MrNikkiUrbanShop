@@ -18,14 +18,12 @@ export default function login() {
   const dispatch = useDispatch();
 
   const userState = useSelector((state) => state.user);
-   
 
   const navigate = useRouter();
 
   useEffect(() => {
     if (userState.verify) {
       navigate.push("/");
-     
     }
 
     if (
@@ -33,7 +31,6 @@ export default function login() {
       localStorage.getItem("user_unverified")
     ) {
       dispatch(sendCode());
-      
     }
   }, [userState.verify]);
 
@@ -143,7 +140,7 @@ export default function login() {
     );
     setUser({
       ...user,
-      "code": "",
+      code: "",
     });
   };
 
@@ -169,7 +166,7 @@ export default function login() {
                 placeholder="Ingresa el código"
                 onChange={(e) => handleChange(e)}
               />
-               <button type="submit" onClick={handleSubmitCode}>
+              <button type="submit" onClick={handleSubmitCode}>
                 Enviar
               </button>
             </form>
@@ -187,9 +184,8 @@ export default function login() {
                   height="140"
                 />
               </Link>
-              <h3>Crea tu cuenta</h3>
+
               <div className={style.sign}>
-                <p>¿Ya tienes una cuenta?</p>
                 <Link href="/login">
                   <span>Inicia Sesión</span>
                 </Link>

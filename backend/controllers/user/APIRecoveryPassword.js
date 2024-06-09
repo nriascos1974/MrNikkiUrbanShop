@@ -23,7 +23,7 @@ const recoveryPassword = async (req, res) => {
                         lastname: user.lastname,
                         firstname: user.firstname,
                         email: user.email,
-                        adress: user.address,
+                        address: user.address,
                         city: user.city,
                         products: user.products,
                         calification: user.calification,

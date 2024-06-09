@@ -68,7 +68,7 @@ const productTest = async () => {
 }
 
 const rolesTest = async () => {
-    const roles = ["user", "admin", "moderator"];
+    const roles = ["user", "admin", "vendedor"];
 
     for (const rol of roles){
         let newRole = new Role ({role: rol});

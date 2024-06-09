@@ -48,15 +48,16 @@ export default function NavBar() {
             <Link href="/productos" className={style.link}>
               <button className={style.btn}>Productos</button>
             </Link>
-            {!userState.user ? (
-              <Link href="/login" className={style.link}>
-                <button className={style.btn}>Vender</button>
-              </Link>
-            ) : (
-              <Link href="/sellProduct" className={style.link}>
-                <button className={style.btn}>Vender</button>
-              </Link>
-            )}
+            {userState.user?.role?.role === "vendedor" &&
+              (!userState.user ? (
+                <Link href="/login" className={style.link}>
+                  <button className={style.btn}>Vender</button>
+                </Link>
+              ) : (
+                <Link href="/sellProduct" className={style.link}>
+                  <button className={style.btn}>Vender</button>
+                </Link>
+              ))}
             {/* <Link href="/faqs" className={style.link}>
               <button className={style.btn}>¿Necesitas ayuda?</button>
             </Link> */}
@@ -98,7 +99,7 @@ export default function NavBar() {
                   />
                 </Link>
               </button>
-              <h6>Bienvenido {userState.user.firstname}!</h6>
+              <h6>{userState.user.firstname}!</h6>
             </div>
           ))}
         <div className={style.shoppingCart}>

@@ -9,6 +9,8 @@ const initialState = {
   error: null,
   verify: false,
   recovery: false,
+  recoveryMail: false,
+  VerifyRecovery: false,
   msg: false,
 };
 
@@ -128,6 +130,7 @@ const authSlice = createSlice({
     },
     logOut: (state) => {
       state.user = null;
+      state.verify = false;
       localStorage.removeItem("user_verified");
       localStorage.removeItem("shopping_cart");
     },
@@ -152,14 +155,16 @@ const authSlice = createSlice({
       // Acciones para enviar el correo del usuario y recibir el código de verificación
       .addCase(codeUserMail.pending, (state) => {
         state.loading = true;
+        state.recoveryMail = false;
       })
       .addCase(codeUserMail.fulfilled, (state, action) => {
         state.loading = false;
-        state.recovery = true;
+        state.recoveryMail = true;
       })
       .addCase(codeUserMail.rejected, (state, action) => {
         state.loading = false;
         state.error = action.payload;
+        state.recoveryMail = false;
       })
       //Acciones para autoLogear a un usuario
       .addCase(autoLoginUser.rejected, (state, action) => {
@@ -197,16 +202,18 @@ const authSlice = createSlice({
       // Acciones para el cambio de contraseña y recibir los datos del usuario
       .addCase(recoveryPassword.pending, (state) => {
         state.loading = true;
+        state.VerifyRecovery = false;
       })
       .addCase(recoveryPassword.fulfilled, (state, action) => {
         state.loading = false;
         state.user = action.payload.user;
         state.msg = action.payload.msg;
-        state.verify = true;
+        state.VerifyRecovery = true;
       })
       .addCase(recoveryPassword.rejected, (state, action) => {
         state.loading = false;
         state.error = action.payload;
+        state.VerifyRecovery = false;
       })
 
       // Acciones para login

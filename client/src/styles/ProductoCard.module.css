@@ -29,6 +29,7 @@
   min-height: 100%;
   min-width: 100%;
   object-fit: cover;
+  border-radius: 10%;
   flex: 1;
 }
 
@@ -42,7 +43,7 @@
   max-height: 110px;
   border-radius: 5px;
   padding: 0.5rem;
-  color: var(--lila);
+  color: var(--azulOscuro);
 }
 
 .infoContainer p {
@@ -62,7 +63,7 @@
 
 .link {
   text-decoration: none;
-  color: var(--lila);
+  color: var(--azulOscuro);
   font-weight: bold;
   font-size: 18px;
   padding: 0 0.5rem;
@@ -70,5 +71,5 @@
 }
 .link:hover {
   text-decoration: underline;
-  color: var(--verde);
+  color: var(--verdeAzul);
 }

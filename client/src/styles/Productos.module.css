@@ -17,7 +17,7 @@
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  color: var(--rosa);
+  color: var(--azulOscuro);
   margin: 2rem 0;
   padding: 0 2rem;
 }
@@ -67,6 +67,13 @@
   width: 100%;
   padding: 0;
   margin: 0 0 2rem 0;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  color: var(--azulOscuro);
 }
 
 .prodContainerFooter {

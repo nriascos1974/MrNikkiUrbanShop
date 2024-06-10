@@ -20,7 +20,7 @@
 }
 .titleCart{
     font-size: 24px;
-    color: var(--gris);
+    color: var(--azulOscuro);
     font-weight: bold;
     letter-spacing: -.6px;
     line-height: 1.13333333;
@@ -123,7 +123,7 @@
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 5px;
-  background: var(--verde);
+  background: var(--azulOscuro);
   color: var(--blanco);
   font-weight: 600;
   cursor: pointer;

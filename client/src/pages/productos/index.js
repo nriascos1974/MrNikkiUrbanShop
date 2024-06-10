@@ -57,22 +57,22 @@ export default function Productos() {
 
           {/* Sección para el título de la página de la página */}
           {/* <h1 className={styles.title}>Productos</h1> */}
-          <HearderProducts></HearderProducts>
+          {/* <HearderProducts></HearderProducts> */}
 
           {/* Sección para el contenido ppal de la página */}
           <div className={styles.main}>
             {/* Panel de filtrado */}
             {/* Por props se pasa el estado local vinculado y la función para modificarlo */}
-            <FilterPanel
+            {/* <FilterPanel
               isVisible={showFilters}
               setVisibility={toggleFilters}
-            />
+            /> */}
 
             {/* Contenedor de la info de los productos */}
             <div className={styles.productsContainer}>
               {/* Header del contenedor de la  info de los productos */}
               <div className={styles.prodContainerHeader}>
-                <p className={styles.totalProducts}>
+                <p className={styles.label}>
                   Total Productos: {cantidad}
                 </p>
                 <SortComponent />

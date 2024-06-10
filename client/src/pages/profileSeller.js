@@ -7,6 +7,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { BsEmojiFrown, BsEmojiNeutral, BsEmojiSmile } from 'react-icons/bs';
 import { getVendorReviews, getVendorRatings } from "../api/reviewsApi";
+import logo from "../../public/pacto-logo.png";
 
 
 function profileSeller() {
@@ -71,17 +72,17 @@ function profileSeller() {
   return (
     <>
       <Head>
-        <title>H2H | Perfil</title>
-        <meta name="description" content="H2H" />
+        <title>Mr. Nikki Shop | Perfil</title>
+        <meta name="description" content="Mr. Nikki Shop" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/pacto-logo.png" />
+        <link rel="icon" href={logo} />
       </Head>
     
       {
         productSeller && 
         <div className={style.containerProfile}>
         <Link href="/">
-            <Image className= {style.imageDetail} priority src="/pacto-logo.png" alt="logo" width="140" height="140"/>
+            <Image className= {style.imageDetail} priority src={logo} alt="logo" width="140" height="140"/>
         </Link>
             <h2 className={style.profileTitle}>Información vendedor</h2>
             

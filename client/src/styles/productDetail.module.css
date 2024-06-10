@@ -27,6 +27,7 @@
   text-align: left;
   margin: 1rem 0;
   padding: 0;
+  color: var(--azulOscuro);
 }
 
 .informationProduct {
@@ -79,6 +80,7 @@
   font-weight: bold;
   text-align: left;
   font-weight: normal;
+  color: var(--azulOscuro);
   margin: 0;
   padding: 0;
 }
@@ -100,7 +102,7 @@
   border: none;
   outline: none;
   border-radius: 5px;
-  background: var(--verde);
+  background: var(--azulOscuro);
   color: var(--blanco);
   text-transform: uppercase;
   font-size: 14px;
@@ -221,7 +223,7 @@
 .infoProduct .buttons .buttonAdd {
   border: none;
   border-radius: 5px;
-  background: var(--rosa);
+  background: var(--azulOscuro);
   color: var(--blanco);
   font-weight: 600;
   cursor: pointer;

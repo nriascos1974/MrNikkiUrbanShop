@@ -39,21 +39,21 @@ cron.schedule('0 0 * * *', () => {
 
 
 const load = async () => {
-  await User.deleteMany();
-  await Category.deleteMany();
-  await Product.deleteMany();
-  await Review.deleteMany();
-  await Question.deleteMany();
-  await Role.deleteMany();
-  await Wallet.deleteMany()
-  await LogAdmin.deleteMany()
+  // await User.deleteMany();
+  // await Category.deleteMany();
+  // await Product.deleteMany();
+  // await Review.deleteMany();
+  // await Question.deleteMany();
+  // await Role.deleteMany();
+  // await Wallet.deleteMany()
+  // await LogAdmin.deleteMany()
   //await City.deleteMany();
   //await Department.deleteMany();
 
   //await departmentsTest();
-  await rolesTest();
-  await userTest();
-  await createMainCategories();
+  // await rolesTest();
+  // await userTest();
+  // await createMainCategories();
   //await productTest();
   //await QuestionTest();
 

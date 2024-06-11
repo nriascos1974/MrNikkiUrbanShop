@@ -190,10 +190,10 @@ function ProfileUser() {
                 <label>Teléfono:</label>
                 <input value={user?.phone || "None"} name="phone" type="text" readOnly />
                 <div className={style.secciones}>
-                  <Link href={'/orders'}>
+                  {/* <Link href={'/orders'}>
                   <button>Ir a mis pedidos</button>
                   </Link>
-                  <button>Ir a mis Productos</button>
+                  <button>Ir a mis Productos</button> */}
                   <button className={style.deslogueo} onClick={handleLogOut}>Cerrar Sesion</button>
                 </div>
               </form>

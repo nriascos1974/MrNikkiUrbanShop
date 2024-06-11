@@ -54,7 +54,7 @@ export default function car() {
           
                     <p>{user?.address ? user?.address: null}</p>
 
-                    <p>{user?.city.city} {user?.city.department.department}</p>
+                    <p>{user?.city?.city} {user?.city?.department?.department}</p>
                 </div>
                 <button className={style.buttonEdit}>Editar o Elegir otra</button>
             </div> 

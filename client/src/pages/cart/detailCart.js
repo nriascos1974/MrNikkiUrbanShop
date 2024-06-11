@@ -3,14 +3,21 @@ import Layout from "../../components/layout";
 import Link from "next/link";
 import Image from "next/image";
 import ProductoCard from "../../components/cart/productCart";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import notFound from "../../../public/image/NotFound.png"
+import { deleteProducts } from "@/redux/features/carrito/carrito";
 
 export default function car() {
-
+  const dispatch = useDispatch();
   const shoppingCart = useSelector((state)=> state.user?.user?.shoppingCart);
   let totalPrice = null;
   console.log(shoppingCart);
+
+  //agregar al carrito
+  const DeleteShoppingCart = (product) => {
+    console.log(product);
+    dispatch(deleteProducts(product));
+  };
 
   return (
     <>
@@ -23,7 +30,7 @@ export default function car() {
 
               totalPrice = price * item.ammount;
               
-              return (<ProductoCard name= {name} images={images} price={price} ammount={item.ammount} total={totalPrice}/>)
+              return (<ProductoCard _id={_id} name= {name} images={images} price={price} ammount={ammount} total={totalPrice} DeleteShoppingCart={DeleteShoppingCart}/>)
             })}
             <div className={style.buttons}>
                 <Link href="/">

@@ -30,10 +30,11 @@
 
 .products{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(31, 1fr);
+    gap: 5px;
     justify-content: center;
     justify-items: center;
-    align-items: baseline
+    align-items: baseline;
 
 }
 .productInfo{
@@ -129,6 +130,17 @@
   cursor: pointer;
   outline: none;
   margin: 0 0.5rem;
+}
+
+.buttonDeleteCart {
+  padding: 0.1rem 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background: var(--azulOscuro);
+  color: var(--blanco);
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
 }
 
 @media (min-width: 768px) { 

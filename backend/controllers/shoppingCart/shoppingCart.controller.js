@@ -1,6 +1,5 @@
 const checkUserExists = require("../../database/helper/DBcheckUserExists");
 const checkProductExists = require("../../database/helper/DBCheckProductExists");
-const DBProductGetId = require("../../database/controllers/products/productGet/DBProductGetId")
 const DBShoppingCartAddProduct = require("../../database/controllers/transactions/shoppingcart/DBShoppingCartAddProduct")
 const DBShoppingCartGet = require("../../database/controllers/transactions/shoppingcart/DBShoppingCartGet")
 const DBUpdateProductInShoppingCart = require("../../database/controllers/transactions/shoppingcart/DBUpdateProductInShoppingCart");

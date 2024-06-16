@@ -111,15 +111,7 @@ export const putEditUser = createAsyncThunk(
     // return response.data;
   }
 );
-// Async thunk para deslogear al usuario
-// export const logOut = createAsyncThunk(
-//   "auth/logOut",
-//   async(user) => {
-//     console.log(user);
-//     // const response = await axios.put('/logout', user);
-//     // return response.data;
-//   }
-// )
+
 
 const authSlice = createSlice({
   name: "auth",

@@ -414,59 +414,9 @@ export default function sellProduct() {
               <hr />
 
               <div className={style.basicInfo}>
-                {/* Select de CATEGORÍAS */}
-                <div className={style.infoItem}>
-                  <label htmlFor="category">Categoría</label>
-                  <select
-                    name="category"
-                    value={selectedCategory || ""}
-                    onChange={handleCategoryChange}
-                    required
-                  >
-                    <option disabled value="">
-                      Selecciona una categoría
-                    </option>
-                    {categories &&
-                      categories.length > 0 &&
-                      categories.map((category) => (
-                        <option key={category._id} value={category.name}>
-                          {category.name}
-                        </option>
-                      ))}
-                  </select>
-                </div>
-
-                {/* Select de SUBCATEGORÍAS */}
-                <div className={style.infoItem}>
-                  <label htmlFor="subCategory">Sub-categoría</label>
-                  <select
-                    id="subCategory"
-                    name="subCategory"
-                    value={selectedSubcategory || ""}
-                    onChange={(e) => setSelectedSubcategory(e.target.value)}
-                    disabled={!selectedCategory}
-                    required
-                  >
-                    <option disabled value="">
-                      Selecciona una subcategoría
-                    </option>
-                    {selectedCategory &&
-                      categories
-                        .find((category) => category.name === selectedCategory)
-                        .subCategories.map((subcategory) => (
-                          <option
-                            key={subcategory._id}
-                            value={subcategory.name}
-                          >
-                            {subcategory.name}
-                          </option>
-                        ))}
-                  </select>
-                </div>
-
                 {/* Select de ESTADO DEL PRODUCTO */}
                 <div className={style.infoItem}>
-                  <label htmlFor="status">Estado del producto</label>
+                  <label htmlFor="status">Tallas</label>
                   <select
                     id="status"
                     name="state"
@@ -482,9 +432,6 @@ export default function sellProduct() {
                     <option value="Reacondicionado">Reacondicionado</option>
                   </select>
                 </div>
-              </div>
-
-              <div className={style.basicInfo}>
                 {/* Input de STOCK */}
                 <div className={style.infoItem}>
                   <label htmlFor="stock">Stock</label>

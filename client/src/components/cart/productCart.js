@@ -1,18 +1,21 @@
 import style from "../../styles/cart/car.module.css";
 import Image from "next/image";
 
-export default function productCart(props) {
-  const { images, name, price, ammount, total, _id, DeleteShoppingCart } = props;
-  
-  const product = { images, name, price, ammount, total, _id };
 
-  
+export default function productCart(props) {
+  const { images, name, price, ammount, total, _id, DeleteShoppingCart } =
+    props;
 
   return (
     <>
       <div className={style.products}>
         <div>
-          <p className={style.buttonDeleteCart} onClick={()=>DeleteShoppingCart(product)}>x</p>
+          <p
+            className={style.buttonDeleteCart}
+            onClick={() => DeleteShoppingCart(_id)}
+          >
+            x
+          </p>
         </div>
         <Image
           className={style.productImage}
@@ -24,9 +27,9 @@ export default function productCart(props) {
           <div className={style.productDetail}>
             <p>{`${name.slice(0, 10)}...`}</p>
             <p>{`$ ${price}`}</p>
+            <p>{`Cant: ${ammount}`}</p>
           </div>
         </div>
-        <p>{`Cant: ${ammount}`}</p>
         <div className={style.totalProduct}>
           <p>{`$ ${total}`}</p>
         </div>

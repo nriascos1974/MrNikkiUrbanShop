@@ -32,7 +32,7 @@ export const sendProducts = createAsyncThunk(
 // enviar productos
 export const deleteProducts = createAsyncThunk(
   "shoppingCart/deleteProducts",
-  async (product, { getState, dispatch }) => {
+  async (itemDelete, { getState, dispatch }) => {
     try {
       const token = localStorage.getItem("user_verified");
       const config = {
@@ -41,11 +41,7 @@ export const deleteProducts = createAsyncThunk(
         },
       };
 
-      const response = await axios.put(
-        "/shoppingcartdelete",
-        [product],
-        config
-      );
+      const response = await axios.put("/shoppingcartdelete", itemDelete);
 
       // Guardar los productos devueltos por la API en el localStorage
       // localStorage.setItem("shopping_cart", JSON.stringify(response.data.products));
@@ -95,8 +91,7 @@ const carritoSlice = createSlice({
         console.log(action);
         state.status = "failed";
         state.error = action.error.message;
-      })
-      ;
+      });
   },
 });
 

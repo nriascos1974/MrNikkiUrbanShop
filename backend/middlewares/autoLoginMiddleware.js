@@ -18,7 +18,7 @@ const autoLogin = async (req, res, next) => {
    
       // Verificar si el token es válido
       const decodedToken = jwt.verify(token, process.env.JWT_PRIVATE_KEY);
-      console.log(decodedToken);
+      // console.log(decodedToken);
    
       if (!decodedToken) {
         

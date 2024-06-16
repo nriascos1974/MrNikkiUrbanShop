@@ -20,7 +20,7 @@ const login = async (req, res) => {
         const user = await checkUserExists(null, email);
         //Verifico que el usuario ingresado exista en la db
         if (user) {
-          console.log(user.state);
+          // console.log(user.state);
           if (user.state) {
             let token = "";
 

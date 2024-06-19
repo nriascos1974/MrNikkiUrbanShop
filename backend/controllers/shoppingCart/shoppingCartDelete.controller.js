@@ -24,7 +24,9 @@ const shoppingCartDelete = async (req, res) => {
         console.log("PRODUCTOS => " + productsShopping.shoppingCart);
 
         const alreadyInCart = productsShopping.shoppingCart.products.some(
-          (item) => item.product._id.equals(productsShoppingCart._id)
+          (item) =>
+            item.product._id.equals(productsShoppingCart._id) &&
+            item.product.size.equals(productsShoppingCart.size)
         );
 
         // console.log("ESTA EL PRODUCTO EN EL CARRITO => " + alreadyInCart);
@@ -32,7 +34,7 @@ const shoppingCartDelete = async (req, res) => {
         if (alreadyInCart) {
           // console.log("Esta el producto en el carrito del usuario");
 
-          await DBShoppingCartRemoveProduct(userId, productsShoppingCart._id);
+          await DBShoppingCartRemoveProduct(userId, productsShoppingCart._id, productsShoppingCart.size);
         } else {
           throw new Error("El producto no se encuentra en el carrito");
         }

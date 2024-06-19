@@ -1,9 +1,18 @@
 const User = require("../../../models/user");
 
-const DBShoppingCartUpdateProduct = async (idUser, idProduct, newAmmount) => {
+const DBShoppingCartUpdateProduct = async (
+  idUser,
+  idProduct,
+  newAmmount,
+  size
+) => {
   try {
     // Filtro para buscar el usuario por ID y el producto en su carrito
-    const filter = { _id: idUser, "shoppingCart.products.product": idProduct };
+    const filter = {
+      _id: idUser,
+      "shoppingCart.products.product": idProduct,
+      "shoppingCart.products.size": size,
+    };
 
     // Objeto de actualización con la propiedad a actualizar
     const update = { $set: { "shoppingCart.products.$.ammount": newAmmount } };

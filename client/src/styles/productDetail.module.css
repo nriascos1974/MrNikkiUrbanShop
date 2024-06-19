@@ -234,6 +234,20 @@
   text-transform: uppercase;
 }
 
+.buttonAddDisabled {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--azulOscuro);
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  cursor:not-allowed;
+  outline: none;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem 0;
+  text-transform: uppercase;
+}
+
 .infoProduct .buttons .buttonSell {
   border: none;
   border-radius: 5px;
@@ -256,6 +270,24 @@
   width: 100%;
   margin: 3rem 0;
 }
+
+.containerRadio {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.3em;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5em;
+}
+
+
 
 .descriptionSection h3 {
   text-transform: uppercase;

@@ -30,7 +30,7 @@ export default function car() {
 
             {shoppingCart?.products.length > 0 &&
               shoppingCart.products.map((item) => {
-                const { _id, name, images, price, ammount } = item.product;
+                const { _id, name, images, price } = item.product;
 
                 totalPrice = price * item.ammount;
 
@@ -43,6 +43,7 @@ export default function car() {
                     ammount={item.ammount}
                     total={totalPrice}
                     DeleteShoppingCart={DeleteShoppingCart}
+                    size={item.size}
                   />
                 );
               })}

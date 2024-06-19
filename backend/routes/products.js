@@ -1,13 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const {getAllProducts} = require('../controllers/product/APIgetAllProducts')
+// const {getAllProducts} = require('../controllers/product/APIgetAllProducts')
 const {getProductById} = require('../controllers/product/APIgetProductById');
 const {banProductById} = require('../controllers/product/APIBanProduct');
 const {postNewProduct} = require('../controllers/product/APIpostNewProduct');
 const {getProductsByFilters} = require('../controllers/product/APIgetProductByFilters');
 const getProductByName = require('../controllers/product/APIgetProductByName');
 const middlewarePostNewProduct = require('../middlewares/productMiddleware');
-const {autoLogin} = require('../middlewares/autoLoginMiddleware');
+// const {autoLogin} = require('../middlewares/autoLoginMiddleware');
 const {getAllProductsAdmin} = require('../controllers/product/APIAdminGetAllProds');
 const {checkIsAdmin} = require('../middlewares/checkAdminMiddleware');
 const getProductByLabel = require('../controllers/product/APIgetProductByLabel');

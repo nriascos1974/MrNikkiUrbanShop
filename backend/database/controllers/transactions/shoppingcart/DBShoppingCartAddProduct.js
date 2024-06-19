@@ -1,9 +1,9 @@
 const Product = require("../../../models/product");
 const User = require("../../../models/user");
 
-const DBShoppingCartAddProduct = async (idUser, idProduct, ammount, price) => {
+const DBShoppingCartAddProduct = async (idUser, idProduct, ammount, size) => {
     try {
-        const cartUser = await User.findByIdAndUpdate(idUser, { $push: { "shoppingCart.products": { product: idProduct, ammount } } }, { returnDocument: "after" })
+        const cartUser = await User.findByIdAndUpdate(idUser, { $push: { "shoppingCart.products": { product: idProduct, ammount, size} } }, { returnDocument: "after" })
         const productprice = await Product.findById(idProduct).select("price")
         cartUser.shoppingCart.totalprice += productprice.price
         await cartUser.save()

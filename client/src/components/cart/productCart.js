@@ -3,7 +3,7 @@ import Image from "next/image";
 
 
 export default function productCart(props) {
-  const { images, name, price, ammount, total, _id, DeleteShoppingCart } =
+  const { images, name, price, ammount, total, _id, DeleteShoppingCart, size } =
     props;
 
   return (
@@ -27,6 +27,7 @@ export default function productCart(props) {
           <div className={style.productDetail}>
             <p>{`${name.slice(0, 10)}...`}</p>
             <p>{`$ ${price}`}</p>
+            <p>{`Talla: ${size}`}</p>
             <p>{`Cant: ${ammount}`}</p>
           </div>
         </div>

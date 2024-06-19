@@ -16,6 +16,7 @@ const initialState = {
   amountXPage : 0,
   productList: { cantidad: 0, products: [] },
   productDetail: {},
+  size:[],
   productSeller: null,
   status: "idle",
   error: null,
@@ -101,7 +102,8 @@ const productsSlice = createSlice({
         })
         .addCase(fetchProductDetailAsync.fulfilled, (state, action) => {
           state.status = "succeeded";
-          state.productDetail = action.payload;
+          state.productDetail = action.payload.info;
+          state.size = action.payload.tallas;
         })
         .addCase(fetchProductDetailAsync.rejected, (state, action) => {
           state.status = "failed";

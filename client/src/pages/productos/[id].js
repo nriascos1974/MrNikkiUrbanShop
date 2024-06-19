@@ -18,8 +18,8 @@ function producto() {
   const router = useRouter();
   const dispatch = useDispatch();
 
-  const { productDetail } = useSelector((state) => state.products);
-  const shoppingCart = useSelector((state) => state.shoppingCart.products);
+  const { productDetail, size } = useSelector((state) => state.products);
+  // const shoppingCart = useSelector((state) => state.shoppingCart.products);
 
   const { id } = router.query;
 
@@ -28,6 +28,7 @@ function producto() {
     name: "",
     price: "",
     amount: "1",
+    size:"",
   });
 
   useEffect(() => {
@@ -39,9 +40,9 @@ function producto() {
   }, [dispatch, id]);
 
   /*------------Traer informacion del vendedor del producto------------*/
-  useEffect(() => {
-    dispatch(fetchProductSellerAsync(id));
-  }, []);
+  // useEffect(() => {
+  //   dispatch(fetchProductSellerAsync(id));
+  // }, []);
 
   /*-------------------------------------------------------------------*/
 
@@ -53,6 +54,7 @@ function producto() {
         id: productDetail._id,
         name: productDetail.name,
         price: productDetail.price,
+        size:"",
       });
     }
   }, [productDetail]);
@@ -64,6 +66,22 @@ function producto() {
       ...product,
       amount: amountProduct,
     });
+  };
+
+  //catidad del producto
+  const handleProductSize = (event) => {
+    const sizeProduct = event.target.value;
+    setProduct({
+      ...product,
+      size: sizeProduct,
+    });
+  };
+
+  // Función para validar si todos los campos del formulario tienen datos
+  const isFormComplete = () => {
+    return (
+      product.size
+    );
   };
 
   //agregar al carrito
@@ -160,10 +178,10 @@ function producto() {
 
                 <div className={style.stockInfo}>
                   <p>
-                    Stock: <span>Disponible</span>
+                    Unidades disponibles: <span>{productDetail.stock}</span>
                   </p>
                   <div className={style.stock}>
-                    <label>Cantidad</label>
+                    <label>Cantidad:</label>
                     <input
                       type="number"
                       min="1"
@@ -172,22 +190,36 @@ function producto() {
                       onChange={handleProductAmount}
                     />
                   </div>
-                  <p>
-                    Unidades disponibles: <span>{productDetail.stock}</span>
-                  </p>
-                  <p>
-                    Información del vendedor{" "}
-                    <button>
-                      <Link className={style.infoSeller} href="/profileSeller">
-                        ℹ️
-                      </Link>
-                    </button>
-                  </p>
+                  <div className={style.stock}>
+                    <p>
+                      Talla: </p>
+                      <div className={style.containerRadio}>
+                      {size.map((x) => {
+                        return (
+                          <div key={x.id} className={style.radio}>
+                            <label htmlFor=""> 
+                              {x.size}</label>
+                              <input
+                                className={style.inputRadio}
+                                type="radio"
+                                name="sizes"
+                                onChange={handleProductSize}
+                                value={x.size}
+                              />
+                             
+                            
+                          </div>
+                        );
+                      })}
+                    
+                  </div>
+                  </div>
                 </div>
 
                 <div className={style.buttons}>
                   <button
-                    className={style.buttonAdd}
+                    disabled={!product.size}
+                    className={!product.size?style.buttonAddDisabled:style.buttonAdd}
                     onClick={handleAddShoppingCart}
                   >
                     Agregar al carrito
@@ -203,7 +235,7 @@ function producto() {
               </div>
             </div>
 
-              {/*<div className={style.questionsSection}>
+            {/*<div className={style.questionsSection}>
               <h3 className={style.detailTitle}>Preguntas y respuestas</h3>
               <div className={style.containerPregunta}>
                 <h4>Pregúntale al vendedor</h4>

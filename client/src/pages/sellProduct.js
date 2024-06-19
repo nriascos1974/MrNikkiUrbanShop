@@ -30,12 +30,15 @@ const validation = {
   },
   stock: {
     min: 1,
-    max: 10,
+    max: 50,
     required: true,
   },
   price: {
-    min: 100,
+    min: 10000,
     max: 10000000,
+    required: true,
+  },
+  tallas: {
     required: true,
   },
   images: {
@@ -60,23 +63,26 @@ export default function sellProduct() {
   const [product, setProduct] = useState({
     name: "",
     description: "",
-    category: "",
-    subcategory: "",
-    state: "",
     stock: "",
     price: "",
     images: [],
+    tallas: [],
   });
 
-  // useEffect(() => {
-  //     console.log(product)
-  // },[product])
+  //* Funcion handler para capturar las tallas
+  const changeHandler = (e) => {
+    const value = e.target.value;
 
-  // Estados para la categoría y subcategoría seleccionadas
-  const [selectedCategory, setSelectedCategory] = useState(null);
-  const [selectedSubcategory, setSelectedSubcategory] = useState(null);
-  // Estado para el estado del producto seleccionado
-  const [selectedStatus, setSelectedStatus] = useState("");
+    if (e.target.checked) {
+      setProduct({ ...product, tallas: [...product.tallas, value] });
+    } else {
+      setProduct({
+        ...product,
+        tallas: product.tallas.filter((x) => x !== value),
+      });
+    }
+  };
+
   // Estado para previsualizar las imagenes seleccionadas
   const [previews, setPreviews] = useState([]);
   // Estado para el spinner de carga
@@ -88,6 +94,7 @@ export default function sellProduct() {
     stock: "",
     price: "",
     images: "",
+    tallas: "",
   });
 
   useEffect(() => {
@@ -105,6 +112,8 @@ export default function sellProduct() {
       product.stock &&
       product.price &&
       product.images.length > 0
+      &&
+      product.tallas.length > 0
     );
   };
 
@@ -114,6 +123,7 @@ export default function sellProduct() {
 
     // Validar el campo que cambió
     let errorMessage = "";
+    
     switch (name) {
       case "name":
         errorMessage = validateName(value);
@@ -173,12 +183,6 @@ export default function sellProduct() {
   };
   //********************************************************************** */
 
-  // Función para gestionar el cambio de categoría
-  const handleCategoryChange = (e) => {
-    setSelectedCategory(e.target.value);
-    setSelectedSubcategory(null);
-  };
-
   // Función para gestionar el submit del formulario
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -189,9 +193,6 @@ export default function sellProduct() {
     const form = new FormData();
     if (product.name) form.append("name", product.name);
     if (product.description) form.append("description", product.description);
-    if (selectedCategory) form.append("category", selectedCategory);
-    if (selectedSubcategory) form.append("subcategory", selectedSubcategory);
-    if (selectedStatus) form.append("state", selectedStatus);
     if (product.stock) form.append("stock", product.stock);
     if (product.price) form.append("price", product.price);
     if (user._id) form.append("user", user._id);
@@ -200,6 +201,7 @@ export default function sellProduct() {
         form.append("images", image);
       });
     }
+    if (product.tallas.length > 0) form.append("tallas", product.tallas);
 
     try {
       // Realiza la petición al backend para crear el producto
@@ -209,12 +211,10 @@ export default function sellProduct() {
       setProduct({
         name: "",
         description: "",
-        category: "",
-        subcategory: "",
-        state: "",
         stock: "",
         price: "",
         images: [],
+        tallas: [],
       });
       // Liberar los objetos URL creados para previsualizar las imagenes
       previews.forEach((preview) => URL.revokeObjectURL(preview));
@@ -240,12 +240,10 @@ export default function sellProduct() {
     setProduct({
       name: "",
       description: "",
-      category: "",
-      subcategory: "",
-      state: "",
       stock: "",
       price: "",
       images: [],
+      tallas: [],
     });
     // Liberar los objetos URL creados para previsualizar las imagenes
     previews.forEach((preview) => URL.revokeObjectURL(preview));
@@ -414,23 +412,54 @@ export default function sellProduct() {
               <hr />
 
               <div className={style.basicInfo}>
-                {/* Select de ESTADO DEL PRODUCTO */}
+                {/* Select TALLAS */}
                 <div className={style.infoItem}>
                   <label htmlFor="status">Tallas</label>
-                  <select
-                    id="status"
-                    name="state"
-                    value={selectedStatus || ""}
-                    onChange={(e) => setSelectedStatus(e.target.value)}
-                    required
-                  >
-                    <option disabled value="">
-                      Selecciona una opción
-                    </option>
-                    <option value="Nuevo">Nuevo</option>
-                    <option value="Usado">Usado</option>
-                    <option value="Reacondicionado">Reacondicionado</option>
-                  </select>
+                  <div className={style.containerCheckBox}>
+                    <div className={style.checkbox}>
+                      <label for="">S</label>
+                      <input
+                        type="checkbox"
+                        name="tallas"
+                        value="S"
+                        onChange={changeHandler}
+                      />
+                    </div>
+                    <div className={style.checkbox}>
+                      <label for="">M</label>
+                      <input
+                        type="checkbox"
+                        name="tallas"
+                        value="M"
+                        onChange={changeHandler}
+                      />
+                    </div>
+                    <div className={style.checkbox}>
+                      <label for="">L</label>
+                      <input
+                        type="checkbox"
+                        name="tallas"
+                        value="L"
+                        onChange={changeHandler}
+                      />
+                    </div>
+                    <div className={style.checkbox}>
+                      <label for="">XL</label>
+                      <input
+                        type="checkbox"
+                        name="tallas"
+                        value="XL"
+                        onChange={changeHandler}
+                      />
+                    </div>
+                    
+                  </div>
+                  {validation.tallas.required &&
+                    product.tallas.length === 0 && (
+                      <p className={style.errorMessage}>
+                        Debe seleccionar una Talla.
+                      </p>
+                    )}
                 </div>
                 {/* Input de STOCK */}
                 <div className={style.infoItem}>

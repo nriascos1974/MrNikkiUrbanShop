@@ -19,6 +19,7 @@ const DBShoppingCartAddProduct = require("./controllers/transactions/shoppingcar
 const DBPurchasedProducts = require("./controllers/transactions/DBPurchasedProducts");
 const DBStateGetOrder = require("./controllers/transactions/DBStateGetOrder");
 const getSaleByIdDB = require("./controllers/sales/DBGetSaleById");
+const Size = require("./models/size");
 
 // REVISAR ARCHIVO ENV EN DRIVE PARA TENER CREDENCIALES DE ACCESO 
 const { MONGO_DB_URI } = process.env
@@ -41,7 +42,8 @@ cron.schedule('0 0 * * *', () => {
 const load = async () => {
   // await User.deleteMany();
   // await Category.deleteMany();
-  // await Product.deleteMany();
+   await Product.deleteMany();
+   await Size.deleteMany();
   // await Review.deleteMany();
   // await Question.deleteMany();
   // await Role.deleteMany();

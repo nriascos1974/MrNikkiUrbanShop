@@ -26,7 +26,7 @@ const shoppingCartDelete = async (req, res) => {
         const alreadyInCart = productsShopping.shoppingCart.products.some(
           (item) =>
             item.product._id.equals(productsShoppingCart._id) &&
-            item.product.size.equals(productsShoppingCart.size)
+            item.product.size == productsShoppingCart.size
         );
 
         // console.log("ESTA EL PRODUCTO EN EL CARRITO => " + alreadyInCart);

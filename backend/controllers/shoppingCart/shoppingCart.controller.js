@@ -23,7 +23,7 @@ const shoppingCart = async (req, res) => {
 
             //Si ya hay productos en el carrito
             if (productsShopping.shoppingCart === undefined) {
-              console.log("carrito vacio");
+              // console.log("carrito vacio");
 
               await DBShoppingCartAddProduct(
                 userId,
@@ -32,52 +32,54 @@ const shoppingCart = async (req, res) => {
                 product.size
               );
             } else {
-              console.log(productsShopping.shoppingCart.products);
+              // console.log(productsShopping.shoppingCart.products);
+              // console.log(product);
 
               const alreadyInCart = productsShopping.shoppingCart.products.some(
                 (item) =>
                   item.product._id.equals(product.id) &&
-                  item.product.size.equals(product.size)
-              );
-
-              const productAmount = productsShopping.shoppingCart.products.find(
-                (item) =>
-                  item.product._id.equals(product.id) &&
-                  item.product.size.equals(product.size)
+                  item.size == product.size
               );
 
               //el producto no esta en el carrito
               if (!alreadyInCart) {
-                console.log(
-                  "No esta el producto aun en el carrito del usuario"
-                );
+                // console.log(
+                //   "No esta el producto aun en el carrito del usuario"
+                // );
 
                 await DBShoppingCartAddProduct(
                   userId,
                   product.id,
                   product.amount,
-                  product.size,
+                  product.size
                 );
               }
               //El producto esta en el carrito
-              else if (
-                alreadyInCart &&
-                productAmount.ammount != product.amount
-              ) {
-                console.log(
-                  "se actualizo correctamente la cantidad del producto"
+              else {
+
+                const productAmount = productsShopping.shoppingCart.products.find(
+                  (item) =>
+                    item.product._id.equals(product.id) &&
+                    item.size == product.size
                 );
+
+                // console.log(
+                //   "se actualizo correctamente la cantidad del producto"
+                // );
+                
+
+                const newAmmount = parseInt(productAmount.ammount) + parseInt(product.amount);
+                // console.log(newAmmount);
+
 
                 // const newValues = { ammount: product.amount };
                 await DBUpdateProductInShoppingCart(
                   userId,
                   product.id,
-                  product.amount,
-                  product.size,
+                  newAmmount,
+                  product.size
                 );
                 // await DBShoppingCartAddProduct(userId, product.id, product.amount,newValues);
-              } else {
-                throw new Error("El producto ya se encuentra en el carrito");
               }
             }
           }
@@ -93,11 +95,9 @@ const shoppingCart = async (req, res) => {
     console.error({
       error: `Error adding products to shopping cart:${error.message}`,
     });
-    return res
-      .status(500)
-      .json({
-        message: `Error adding products to shopping cart: ${error.message}`,
-      });
+    return res.status(500).json({
+      message: `Error adding products to shopping cart: ${error.message}`,
+    });
   }
 };
 

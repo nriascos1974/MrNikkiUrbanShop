@@ -42,8 +42,8 @@ cron.schedule('0 0 * * *', () => {
 const load = async () => {
   // await User.deleteMany();
   // await Category.deleteMany();
-   await Product.deleteMany();
-   await Size.deleteMany();
+  //  await Product.deleteMany();
+  //  await Size.deleteMany();
   // await Review.deleteMany();
   // await Question.deleteMany();
   // await Role.deleteMany();

@@ -28,7 +28,7 @@ function producto() {
     name: "",
     price: "",
     amount: "1",
-    size:"",
+    size: "",
   });
 
   useEffect(() => {
@@ -54,7 +54,7 @@ function producto() {
         id: productDetail._id,
         name: productDetail.name,
         price: productDetail.price,
-        size:"",
+        size: "",
       });
     }
   }, [productDetail]);
@@ -79,9 +79,7 @@ function producto() {
 
   // Función para validar si todos los campos del formulario tienen datos
   const isFormComplete = () => {
-    return (
-      product.size
-    );
+    return product.size;
   };
 
   //agregar al carrito
@@ -191,38 +189,37 @@ function producto() {
                     />
                   </div>
                   <div className={style.stock}>
-                    <p>
-                      Talla: </p>
-                      <div className={style.containerRadio}>
+                    <p>Talla: </p>
+                    <div className={style.containerRadio}>
                       {size.map((x) => {
                         return (
                           <div key={x.id} className={style.radio}>
-                            <label htmlFor=""> 
-                              {x.size}</label>
-                              <input
-                                className={style.inputRadio}
-                                type="radio"
-                                name="sizes"
-                                onChange={handleProductSize}
-                                value={x.size}
-                              />
-                             
-                            
+                            <label htmlFor="">{x.size}</label>
+                            <input
+                              className={style.inputRadio}
+                              type="radio"
+                              name="sizes"
+                              onChange={handleProductSize}
+                              value={x.size}
+                            />
                           </div>
                         );
                       })}
-                    
-                  </div>
+                    </div>
                   </div>
                 </div>
 
                 <div className={style.buttons}>
                   <button
                     disabled={!product.size}
-                    className={!product.size?style.buttonAddDisabled:style.buttonAdd}
+                    className={
+                      !product.size ? style.buttonAddDisabled : style.buttonAdd
+                    }
                     onClick={handleAddShoppingCart}
                   >
-                    Agregar al carrito
+                    {!product.size
+                      ? "Selecciona una talla"
+                      : "Agregar a la bolsa"}
                   </button>
                 </div>
               </div>

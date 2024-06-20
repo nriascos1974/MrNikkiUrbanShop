@@ -6,6 +6,7 @@ const shoppingCartDelete = async (req, res) => {
   try {
     const productsShoppingCart = req.body;
     const userId = productsShoppingCart._idUser;
+
     // console.log("USUARIO ID => "+userId);
     // console.log("PRODUCTO ID A BORRAR CARRITO => " + productsShoppingCart._id);
 
@@ -21,12 +22,16 @@ const shoppingCartDelete = async (req, res) => {
       if (productsShopping.shoppingCart === undefined) {
         console.log("carrito vacio");
       } else {
-        console.log("PRODUCTOS => " + productsShopping.shoppingCart);
+        console.log("++++++productsShopping.shoppingCart+++++++");
+        console.log(productsShopping.shoppingCart);
+        
+        console.log("++++++productsShoppingCart+++++++");
+        console.log(productsShoppingCart);
 
         const alreadyInCart = productsShopping.shoppingCart.products.some(
           (item) =>
             item.product._id.equals(productsShoppingCart._id) &&
-            item.product.size == productsShoppingCart.size
+            item.size == productsShoppingCart.size
         );
 
         // console.log("ESTA EL PRODUCTO EN EL CARRITO => " + alreadyInCart);

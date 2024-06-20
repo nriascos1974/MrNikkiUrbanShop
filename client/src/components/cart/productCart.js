@@ -12,7 +12,7 @@ export default function productCart(props) {
         <div>
           <p
             className={style.buttonDeleteCart}
-            onClick={() => DeleteShoppingCart(_id)}
+            onClick={() => DeleteShoppingCart(_id, size)}
           >
             x
           </p>

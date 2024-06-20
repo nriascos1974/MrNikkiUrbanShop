@@ -15,8 +15,8 @@ export default function car() {
 
   //agregar al carrito
 
-  const DeleteShoppingCart = (_id) => {
-    const itemDelete = { _id, _idUser };
+  const DeleteShoppingCart = (_id, size) => {
+    const itemDelete = { _id, _idUser, size };
     dispatch(deleteProducts(itemDelete));
   };
 

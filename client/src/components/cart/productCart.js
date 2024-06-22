@@ -1,6 +1,7 @@
 import style from "../../styles/cart/car.module.css";
 import Image from "next/image";
-
+import { GoTrash } from "react-icons/go";
+import { BsTrashFill } from "react-icons/bs";
 
 export default function productCart(props) {
   const { images, name, price, ammount, total, _id, DeleteShoppingCart, size } =
@@ -10,12 +11,10 @@ export default function productCart(props) {
     <>
       <div className={style.products}>
         <div>
-          <p
-            className={style.buttonDeleteCart}
+          <BsTrashFill
+            className={style.emoji}
             onClick={() => DeleteShoppingCart(_id, size)}
-          >
-            x
-          </p>
+          />
         </div>
         <Image
           className={style.productImage}

@@ -21,6 +21,7 @@ const Paginado = () => {
     const numOfPages = Math.ceil( cantidad / amountXPage);
 
     const array = Array.from({ length: numOfPages }, (_, index) => index + 1);
+    
     useEffect(()=>{
         dispatch(setPage(paginate))
     },[paginate])

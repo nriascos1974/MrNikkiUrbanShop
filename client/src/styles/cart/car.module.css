@@ -2,6 +2,12 @@
   display: none;
 }
 
+.emoji{
+  font-size: 100%;
+  color: var(--azulOscuro);
+  cursor: pointer;
+}
+
 .totalProduct {
   display: none;
 }

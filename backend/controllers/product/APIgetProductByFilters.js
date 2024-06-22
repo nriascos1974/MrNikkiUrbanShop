@@ -34,7 +34,7 @@ const getProductsByFilters = async (req, res) => {
         
       
        
-        const amountXPage = 24;
+        const amountXPage = 9;
 
         const filters = {
             categories : categoria && !(categoria === conditions.isUndefined) ? {
@@ -110,14 +110,17 @@ const getProductsByFilters = async (req, res) => {
                 }).filter((prod) => prod.name)
             }
 
-
-
             const prodsXPage = products.slice(indexFirstProd, indexLastProd);
-    
+
+            const prodsXPagePpal = products.slice(0, 3);
+
+
+            
             return res.status(200).json({
                 cantidad: amountProd,
                 amountXPage: amountXPage,
-                products : prodsXPage
+                products : prodsXPage,
+                productsPpal : prodsXPagePpal
             });
         }
     

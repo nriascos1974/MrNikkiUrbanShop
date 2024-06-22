@@ -25,10 +25,10 @@ export default function Menu() {
 
       <div className={style.links}>
         <Link href="/nosotros" className={style.link}>
-          <button className={style.btn}>Nosotros {">"}</button>
+          <button className={style.btn}>Nosotros</button>
         </Link>
         <Link href="/productos" className={style.link}>
-          <button className={style.btn}>Productos {">"}</button>
+          <button className={style.btn}>Productos</button>
         </Link>
         {!userState.user ? (
           <Link href="/login" className={style.link}>
@@ -39,21 +39,21 @@ export default function Menu() {
             <button className={style.btn}>Vender</button>
           </Link>
         )}
-        <Link href="/faqs" className={style.link}>
+        {/* <Link href="/faqs" className={style.link}>
           <button className={style.btn}>¿Necesitas ayuda? {">"}</button>
-        </Link>
+        </Link> */}
         {!userState.user ? (
           <Link href="/login" className={style.link}>
-            <button className={style.btn}>Login {">"}</button>
+            <button className={style.btn}>Login</button>
           </Link>
         ) : (
           <Link href="/profileUser" className={style.link}>
-            <button className={style.btn}>Perfil {">"}</button>
+            <button className={style.btn}>Perfil</button>
           </Link>
         )}
         {userState.user?.role?.role === "admin" && (
           <Link href="/dashboard/admin" className={style.link}>
-            <button className={style.btn}>Admin Panel {">"}</button>
+            <button className={style.btn}>Admin Panel</button>
           </Link>
         )}
       </div>

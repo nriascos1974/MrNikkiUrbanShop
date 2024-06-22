@@ -13,8 +13,8 @@
 }
 
 .close {
-  background-color: var(--amarillo);
-  color: var(--negro);
+  background-color: var(--azulOscuro);
+  color: white;
   font-weight: bold;
   border: none;
   font-size: 16px;

@@ -4,6 +4,7 @@ import NavBar from "./navbar";
 import Menu from "./menu";
 import Footer from "./footer";
 import FooterLinks from "./FooterLinks";
+import ProductListPpal from "./ProductListPpal";
 
 export default function Layout({ children, title }) {
   return (
@@ -16,13 +17,9 @@ export default function Layout({ children, title }) {
       </Head>
 
       <Menu />
-
       <NavBar />
-
       <div>{children}</div>
-
       <Footer />
-
       <FooterLinks />
     </>
   );

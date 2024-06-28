@@ -14,7 +14,7 @@
 
 .titleCart{
     font-size: 24px;
-    color: var(--azulOscuro);
+    color: var(--gris-oscuro);
     font-weight: bold;
     letter-spacing: -.6px;
     text-align: center;
@@ -54,11 +54,11 @@
   display: block;
   border: none;
   border-radius: 5px;
-  background: var(--azulOscuro);
+  background: var(--gris-oscuro);
   color: var(--blanco);
   font-weight: 600;
   cursor: pointer;
-  outline: none;
+  /* outline: none; */
   margin: 0 auto;
   margin-top: 20px;
 }

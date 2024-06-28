@@ -12,9 +12,8 @@ export default function FooterLinks() {
         {/* derechos reservados */}
         <div className={styles.rigth}>
           <p>
-            © <strong>Mr. Nikki Shop</strong>, Ecommerce filial de{" "}
-            <strong>Estampados Rionegro</strong> Crea tu estilo, estampa tu
-            idea, Rionegro-Antioquia 2024.
+            © <strong>Mela BrandShop</strong>, Marketplace filial de{" "}
+            <strong>Estampados Rionegro</strong>, Rionegro-Antioquia 2024.
           </p>
           
         </div>

@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import { putEditUser,logOut } from "@/redux/features/auth/authSlice";
 import { useRouter } from "next/router";
 import { getDepartments, getCities } from "@/redux/features/departments/departmentsSlice";
-import logo from "../../public/pacto-logo.png";
+import logo from "../../public/logo.png";
 
 function ProfileUser() {
   const { user } = useSelector((state) => state.user);
@@ -108,8 +108,8 @@ function ProfileUser() {
   return (
     <>
       <Head>
-        <title>Mr. Nikki Shop | Perfil</title>
-        <meta name="description" content="Mr. Nikki Shop" />
+        <title>Mela BrandShop | Perfil</title>
+        <meta name="description" content="Mela BrandShop" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href={logo} />
       </Head>

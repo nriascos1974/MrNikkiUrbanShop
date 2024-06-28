@@ -7,7 +7,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { BsEmojiFrown, BsEmojiNeutral, BsEmojiSmile } from 'react-icons/bs';
 import { getVendorReviews, getVendorRatings } from "../api/reviewsApi";
-import logo from "../../public/pacto-logo.png";
+import logo from "../../public/logo.png";
 
 
 function profileSeller() {
@@ -72,8 +72,8 @@ function profileSeller() {
   return (
     <>
       <Head>
-        <title>Mr. Nikki Shop | Perfil</title>
-        <meta name="description" content="Mr. Nikki Shop" />
+        <title>Mela BrandShop | Perfil</title>
+        <meta name="description" content="Mela BrandShop" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href={logo} />
       </Head>

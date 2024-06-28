@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import style from "../styles/Login.module.css";
-import logo from "../../public/pacto-logo.png";
+import logo from "../../public/logo.png";
 import validate from "@/utils/validation/validationUser";
 import { recoveryPassword } from "@/redux/features/auth/authSlice";
 import { useState, useEffect } from "react";
@@ -69,8 +69,8 @@ export default function changepassword() {
   return (
     <div className={style.login}>
       <Head>
-        <title>Mr. Nikki Shop | Cambio de contraseña</title>
-        <meta name="description" content="Mr. Nikki Shop" />
+        <title>Mela BrandShop | Cambio de contraseña</title>
+        <meta name="description" content="Mela BrandShop" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href={logo} />
       </Head>

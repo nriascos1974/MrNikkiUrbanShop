@@ -8,7 +8,7 @@
 }
 
 .containerProfileData{
-    border: 2px solid var(--verdeAzul);
+    border: 2px solid var(--gris-oscuro);
     background-color: var(--gris-claro);
     border-radius: 1.5rem;
     display: flex;
@@ -22,7 +22,7 @@
     font-weight: bold;
     text-align: left;
     margin: 30px 20px;
-    color: var(--azulOscuro);
+    color: var(--gris-oscuro);
 }
 
 .profileDataTitle{
@@ -37,7 +37,7 @@
     font-weight: medium;
     text-align: left;
     margin: 30px 20px;
-    color: var(--azulOscuro);
+    color: var(--gris-oscuro);
 }
 
 .lapiz {
@@ -61,7 +61,7 @@
 
     border: none;
     border-radius: 5px;
-    background: var(--verdeAzul) !important;
+    background: var(--gris-oscuro) !important;
     color: var(--blanco);
     font-weight: 600;
     cursor: pointer;
@@ -83,7 +83,7 @@
 
 .form__Login input{
     padding: 10px;
-    border: 1px solid var(--verdeAzul);
+    border: 1px solid var(--gris-oscuro);
     font-weight: 600;
     border-radius: 5px;
     outline: none;
@@ -110,7 +110,7 @@
 
 .form__Login_Edit input{
     padding: 10px;
-    border: 1px solid var(--verdeAzul);
+    border: 1px solid var(--gris-oscuro);
     font-weight: 600;
     border-radius: 5px;
     outline: none;
@@ -120,7 +120,7 @@
 
 .form__Login_Edit select{
     padding: 10px;
-    border: 1px solid var(--verdeAzul);
+    border: 1px solid var(--gris-oscuro);
     font-weight: 600;
     border-radius: 5px;
     outline: none;
@@ -132,7 +132,7 @@
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background: var(--azulOscuro);
+    background: var(--gris-oscuro);
     color: var(--blanco);
     font-weight: 600;
     cursor: pointer;
@@ -149,15 +149,21 @@
 
 
 .imageDetail{
+    flex: 1;
+    display: flex;
+    align-items: center;
     /* border: 2px solid red; */
-    margin-bottom: -1rem;
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+  
 }
 
 .form__profile button{
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background: var(--azulOscuro);
+    background: var(--gris-oscuro);
     color: var(--blanco);
     font-weight: 600;
     cursor: pointer;

@@ -12,7 +12,7 @@ import {
   getCities,
 } from "@/redux/features/departments/departmentsSlice";
 import validate from "@/utils/validation/validationUser";
-import logo from "../../public/pacto-logo.png";
+import logo from "../../public/logo.png";
 
 export default function login() {
   const dispatch = useDispatch();
@@ -147,8 +147,8 @@ export default function login() {
   return (
     <div>
       <Head>
-        <title>Mr. Nikki Shop | Registro</title>
-        <meta name="description" content="Mr. Nikki Shop" />
+        <title>Mela BrandShop | Registro</title>
+        <meta name="description" content="Mela BrandShop" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href={logo} />
       </Head>

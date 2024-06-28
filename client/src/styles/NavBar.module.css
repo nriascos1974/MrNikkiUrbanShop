@@ -4,7 +4,7 @@
   align-items: center;
   padding: 0.5rem 2rem;
 
-  background-color: var(--azulBabyBlue);
+  background-color: var(--gris-claro);
 }
 
 .logo {
@@ -13,6 +13,7 @@
   align-items: center;
   /* border: 2px solid red; */
   height: 100px;
+  width: 200px;
   object-fit: cover;
 }
 
@@ -96,7 +97,7 @@
 
 
 .btn {
-  color: var(--verdeAzul);
+  color: var(--gris-oscuro);
   font-weight: bold;
   font-size: larger;
   cursor: pointer;
@@ -116,7 +117,7 @@
 
 .btn::after {
   content: "";
-  border-bottom: 3px double var(--verde);
+  border-bottom: 3px double var(--gris-oscuro);
   width: 0;
   height: 100%;
   position: absolute;

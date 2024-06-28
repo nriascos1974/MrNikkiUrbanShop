@@ -12,7 +12,7 @@ import { GoogleButton } from 'react-google-button';
 import { auth } from "../components/firebase";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { useAuthState } from 'react-firebase-hooks/auth';
-import logo from "../../public/pacto-logo.png";
+import logo from "../../public/logo.png";
 
 
 
@@ -78,8 +78,8 @@ export default function login(){
     return (
         <div className= {style.login}>
             <Head>
-                <title>Mr. Nikki Shop | Login</title>
-                <meta name="description" content="Mr. Nikki Shop" />
+                <title>Mela BrandShop | Login</title>
+                <meta name="description" content="Mela BrandShop" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href={logo} />
             </Head>

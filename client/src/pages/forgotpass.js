@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import style from "../styles/Login.module.css";
-import logo from "../../public/pacto-logo.png";
+import logo from "../../public/logo.png";
 import { codeUserMail } from "@/redux/features/auth/authSlice";
 import validate from "@/utils/validation/validationUser";
 import { useState, useEffect } from "react";
@@ -60,8 +60,8 @@ export default function forgotpass() {
   return (
     <div className={style.login}>
       <Head>
-        <title>Mr. Nikki Shop | Recuperar Contraseña</title>
-        <meta name="description" content="Mr. Nikki Shop" />
+        <title>Mela BrandShop | Recuperar Contraseña</title>
+        <meta name="description" content="Mela BrandShop" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href={logo} />
       </Head>

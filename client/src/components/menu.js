@@ -1,7 +1,7 @@
 import style from "../styles/Menu.module.css";
 import { useSelector, useDispatch } from "react-redux";
 import { openMenu } from "@/redux/features/menu/menuSlice";
-import logo from "../../public/pacto-logo.png";
+import logo from "../../public/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 

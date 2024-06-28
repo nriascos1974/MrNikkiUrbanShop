@@ -3,7 +3,7 @@ import Image from "next/image";
 import SearchBar from "./searchbar";
 import Link from "next/link";
 import { useSelector, useDispatch } from "react-redux";
-import logo from "../../public/pacto-logo.png";
+import logo from "../../public/logo.png";
 import menu from "../../public/image/menu.png";
 import user from "../../public/image/user.png";
 import cart from "../../public/image/cart.png";
@@ -28,7 +28,7 @@ export default function NavBar() {
     <nav className={style.container}>
       <div className={style.logo}>
         <Link href={"/"}>
-          <Image priority src={logo} alt="logo" width="140" height="140" />
+          <Image priority src={logo} alt="logo" width="340" height="340" />
         </Link>
       </div>
 

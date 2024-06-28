@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCategories } from "@/redux/features/categories/categoriesSlice";
 import { addProduct } from "../api/productsApi";
-import logo from "../../public/pacto-logo.png";
+import logo from "../../public/logo.png";
 
 // Objeto para validar los campos del formulario
 const validation = {
@@ -347,8 +347,8 @@ export default function sellProduct() {
   return (
     <div className={style.container}>
       <Head>
-        <title>Mr. Nikki Shop | Publica tu producto</title>
-        <meta name="description" content="PACTO" />
+        <title>Mela BrandShop | Publica tu producto</title>
+        <meta name="description" content="Mela BrandShop" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href={logo} />
       </Head>

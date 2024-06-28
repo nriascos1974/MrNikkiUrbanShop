@@ -2,7 +2,7 @@ import styles from '../../styles/nosotros.module.css';
 import Layout from '@/components/layout';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from "../../../public/pacto-logo.png";
+import logo from "../../../public/logo.png";
 
 
 export default function Nosotros() {
@@ -14,7 +14,7 @@ export default function Nosotros() {
                 <div className={styles.text}>
                     <div>
                         <h1>¿Quienes somos?</h1>
-                        <p>Mr. Nikki Shop,   es   una   plataforma  de comercio electrónico donde   las Personas pueden comprar productos diseñados y confeccionados por Estampados Rionegro.
+                        <p>Mela BrandShop,   es   una   plataforma  de comercio electrónico donde   las Personas pueden comprar productos diseñados y confeccionados por Estampados Rionegro.
                         </p>
                     </div>
                     <div>

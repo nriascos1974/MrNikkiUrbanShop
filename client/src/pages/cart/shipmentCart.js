@@ -67,9 +67,6 @@ export default function car() {
             })}
 
             <div className={style.resumenCompra}>
-                {/* <p>Resumen compra</p>
-                <h3><span>Productos</span>(2)</h3>
-                <h3>Total: $1500</h3> */}
                 <p>Resumen compra</p>
                 <h3>Total: ${total}</h3>
                 <h3><span>Productos</span>({totalProducts})</h3>

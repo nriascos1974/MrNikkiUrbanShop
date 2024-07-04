@@ -26,7 +26,7 @@ export const payment = createAsyncThunk(
       // dispatch(setError('El producto ya no está disponible en el la cantidad seleccionada'));
       // dispatch(setStatus("failed"));
       console.log(error.message);
-
+ 
     }
   }
 );

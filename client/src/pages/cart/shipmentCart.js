@@ -3,10 +3,8 @@ import Layout from "../../components/layout";
 import Link from "next/link";
 import style from "../../styles/cart/envio.module.css";
 import { GrMapLocation } from 'react-icons/gr';
-import ProductoCard from "../../components/cart/productCart";
 import {payment} from "@/redux/features/payment/payment";
 import { useDispatch,useSelector } from "react-redux";
-import { useState } from "react";
 import { useEffect } from "react";
 
 
@@ -56,7 +54,7 @@ export default function car() {
 
                     <p>{user?.city?.city} {user?.city?.department?.department}</p>
                 </div>
-                <button className={style.buttonEdit}>Editar o Elegir otra</button>
+                {/* <button className={style.buttonEdit}>Editar o Elegir otra</button> */}
             </div> 
             
             {userProducts?.map(product=>{
@@ -68,8 +66,9 @@ export default function car() {
 
             <div className={style.resumenCompra}>
                 <p>Resumen compra</p>
-                <h3>Total: ${total}</h3>
-                <h3><span>Productos</span>({totalProducts})</h3>
+                <h4>{""}</h4>
+                <p>Total: ${total}</p>
+                <p><span>Productos</span>({totalProducts})</p>
             </div>
 
             <Link href="">

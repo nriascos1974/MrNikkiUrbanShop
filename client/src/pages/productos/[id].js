@@ -175,9 +175,19 @@ function producto() {
                 </p>
 
                 <div className={style.stockInfo}>
-                  <p>
-                    Unidades disponibles: <span>{productDetail.stock}</span>
-                  </p>
+                  <div className={style.stock}>
+                    <p>Cantidad Disponible: </p>
+                    <div className={style.containerRadio}>
+                      {size.map((x) => {
+                        return (
+                          <div key={x.id} className={style.radio}>
+                            <label htmlFor="">{x.size}</label>
+                            <label>{x.stock}</label>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
                   <div className={style.stock}>
                     <label>Cantidad:</label>
                     <input
@@ -188,6 +198,7 @@ function producto() {
                       onChange={handleProductAmount}
                     />
                   </div>
+
                   <div className={style.stock}>
                     <p>Talla: </p>
                     <div className={style.containerRadio}>

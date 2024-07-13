@@ -11,10 +11,6 @@ router.post("/payment", verifyToken, checkProductsPayment, (req, res) =>
   createPayment(req, res)
 );
 
-/*router.post("/payment", verifyToken, (req, res) =>
-  createPayment(req, res)
-);*/
-
 router.post("/paymentmercadopago", (req, res) => statusPayment(req, res));
 
 module.exports = router;

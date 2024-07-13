@@ -30,6 +30,15 @@ export const payment = createAsyncThunk(
     }
   }
 );
+export const paymentmercadopago = createAsyncThunk(
+  "paymentmercadopago",
+  async (estadoCompra) => {
+    console.log(estadoCompra);
+    const response = await axios.post("/paymentmercadopago", estadoCompra);
+    console.log(response.data);
+    return response.data;
+  }
+);
 
 const initialState = {
   paymentUrl: "",

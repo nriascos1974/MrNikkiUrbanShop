@@ -16,7 +16,7 @@ const initialState = {
   amountXPage : 0,
   productList: { cantidad: 0, products: [], productsPpal: [], amountXPage : 0 },
   productDetail: {},
-  size:[],
+  size:{},
   productSeller: null,
   status: "idle",
   error: null,
@@ -58,6 +58,7 @@ const productsSlice = createSlice({
     },
     setDetail: (state) => {
       state.productDetail = {};
+      state.size = {};
     },
     setSeller: (state) => {
       state.productSeller = {};

@@ -43,7 +43,8 @@
     padding: 1rem;
 }
 
-.resumenCompra p{
+
+.resumenCompra H4{
     width: 100%;
     display: block;
     border-bottom: 1px solid var(--gris);
@@ -62,6 +63,7 @@
   margin: 0 auto;
   margin-top: 20px;
 }
+
 @media (min-width: 768px) { 
 
     .container{
